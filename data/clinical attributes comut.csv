@@ -1,0 +1,31 @@
+,casenum,age_geq50,age_order,Liver  mets,HR_status,PDL1,chemo_lines,bestresp,ORR,clinical benefit
+0,2,Y,20.0,0,HR +,positive,0 or 1,PD,,
+1,9,N,4.0,0,TNBC,negative,0 or 1,PD,,
+2,12,Y,29.0,1,HR +,negative,>1,PD,,
+3,13,Y,20.0,1,HR +,negative,>1,PD,,
+4,15,N,7.0,1,HR +,positive,0 or 1,PD,,
+5,16,N,5.0,1,HR +,negative,>1,SD,,
+6,20,Y,10.5,0,TNBC,negative,>1,NE,,
+7,27,Y,10.5,1,HR +,negative,>1,PD,,
+8,30,Y,25.5,0,TNBC,negative,>1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+9,1,Y,27.5,0,HR +,negative,0 or 1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+10,10,Y,15.5,0,HR +,negative,>1,PD,,
+11,14,Y,22.0,1,HR +,negative,0 or 1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+12,21,Y,30.0,0,HR +,negative,>1,SD,,
+13,23,N,6.0,1,TNBC,negative,0 or 1,PD,,
+14,28,Y,13.5,0,TNBC,negative,0 or 1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+15,29,Y,17.5,1,HR +,negative,0 or 1,NE,,
+16,31,Y,12.0,0,TNBC,positive,0 or 1,SD,,
+17,3,N,3.0,1,TNBC,negative,>1,PD,,
+18,4,Y,20.0,1,HR +,negative,0 or 1,NE,,
+19,5,N,1.0,1,HR +,negative,>1,PD,,
+20,6,N,8.0,1,HR +,negative,>1,PD,,
+21,7,Y,17.5,0,HR +,negative,0 or 1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+22,8,Y,9.0,1,HR +,negative,0 or 1,PD,,
+23,11,Y,23.0,0,TNBC,positive,>1,PR,ORR,CBR (CR+PR+SD >= 24 weeks)
+24,17,Y,27.5,0,TNBC,positive,0 or 1,PD,,
+25,18,Y,24.0,1,HR +,,>1,PD,,
+26,19,Y,25.5,1,HR +,negative,0 or 1,PD,,
+27,22,Y,13.5,1,HR +,negative,0 or 1,SD,,
+28,25,Y,15.5,1,HR +,negative,>1,SD,,
+29,26,N,2.0,1,HR +,negative,>1,PD,,

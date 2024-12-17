@@ -1,0 +1,15 @@
+,SUBJECT_ID,TIMEPOINT,SUBJECT_ID_TIMEPOINT,TF_ESTIMATE,TF_STATUS,clinical benefit,bestresp,Time,n
+0,1.0,Baseline,P1_Baseline,0.22,estimated,Yes,PR,0,2
+1,1.0,EOT,P1_EOT,0.0,not-detected,Yes,PR,1,2
+2,2.0,Baseline,P2_Baseline,0.099,estimated,No,PD,0,2
+3,2.0,EOT,P2_EOT,0.13,estimated,No,PD,1,2
+7,6.0,Baseline,P6_Baseline,0.13,estimated,No,PD,0,2
+8,6.0,EOT,P6_EOT,0.24,estimated,No,PD,1,2
+9,7.0,Baseline,P7_Baseline,0.22,estimated,Yes,PR,0,2
+10,7.0,EOT,P7_EOT,0.0,detected,Yes,PR,1,2
+14,11.0,Baseline,P11_Baseline,0.0,detected,Yes,PR,0,2
+15,11.0,EOT,P11_EOT,0.0,not-detected,Yes,PR,1,2
+17,14.0,Baseline,P14_Baseline,0.15,estimated,Yes,PR,0,2
+18,14.0,EOT,P14_EOT,0.013,estimated,Yes,PR,1,2
+23,20.0,Baseline,P20_Baseline,0.28,estimated,No,NE,0,2
+24,20.0,EOT,P20_EOT,0.46,estimated,No,NE,1,2

@@ -1,0 +1,1588 @@
+,gene,Subject_ID,mutation_type,oncogenic,SUBJECT_ID_TIMEPOINT
+0,RAD52,1,Missense,,P1_Baseline
+2,BRIP1,1,Missense,,P1_Baseline
+3,CDKN2A,1,Missense,,P1_Baseline
+4,ASXL1,1,Missense,,P1_Baseline
+5,BRCA2,1,Frameshift Deletion,Pathogenic / Likely Pathogenic,P1_Baseline
+6,ATR,1,Missense,,P1_Baseline
+7,FANCA,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+8,SMARCB1,1,Missense,,P1_Baseline
+9,SOX2,1,Missense,,P1_Baseline
+11,PTPRO,1,Missense,,P1_Baseline
+12,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+13,KDM5A,1,Missense,,P1_Baseline
+14,MKNK1,1,Missense,,P1_Baseline
+15,MUTYH,1,Missense,,P1_Baseline
+16,EPHA3,1,Missense,,P1_Baseline
+17,MLH1,1,Missense,,P1_Baseline
+18,ATRX,1,Missense,,P1_Baseline
+19,KDM5C,1,Missense,,P1_Baseline
+20,SDHC,1,Missense,,P1_Baseline
+21,APC,1,Missense,,P1_Baseline
+22,FANCA,1,Missense,,P1_Baseline
+23,PALB2,1,Missense,,P1_Baseline
+24,SOX9,1,Missense,,P1_Baseline
+25,MSH6,1,Missense,,P1_Baseline
+26,RB1,1,Missense,,P1_Baseline
+28,ERBB3,1,Missense,,P1_Baseline
+29,AR,1,Missense,,P1_Baseline
+30,NOTCH3,1,Missense,,P1_Baseline
+31,CARD11,1,Missense,,P1_Baseline
+32,TET2,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+33,BTK,1,Missense,,P1_Baseline
+34,TSC1,1,Missense,,P1_Baseline
+35,NOTCH2,1,Missense,,P1_Baseline
+36,AXIN1,1,Missense,,P1_Baseline
+37,ATRX,1,Missense,,P1_Baseline
+38,PIK3CA,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+39,SF3B1,1,Missense,,P1_Baseline
+41,IKZF1,1,Missense,,P1_Baseline
+42,MAP2K1,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+43,POLE,1,Missense,,P1_Baseline
+44,BRCA2,1,Missense,,P1_Baseline
+45,MYC,1,Missense,,P1_Baseline
+46,SPOP,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+47,PALB2,1,Missense,,P1_Baseline
+48,CDH1,1,Missense,,P1_Baseline
+49,APC,1,Missense,,P1_Baseline
+51,EMSY,1,Nonsense,,P1_Baseline
+52,BRIP1,1,Missense,,P1_Baseline
+53,ALK,1,Splice Site,,P1_Baseline
+54,ERBB4,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+55,RB1,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+56,ASXL1,1,Missense,,P1_Baseline
+57,ARID1A,1,Missense,,P1_Baseline
+58,CUL4A,1,Missense,,P1_Baseline
+59,FAM123B,1,Missense,,P1_Baseline
+60,PRDM1,1,Missense,,P1_Baseline
+61,FLT1,1,Missense,,P1_Baseline
+62,CCND1,1,Missense,,P1_Baseline
+63,FANCC,1,Missense,,P1_Baseline
+64,ATR,1,Missense,,P1_Baseline
+65,IGF1R,1,Missense,,P1_Baseline
+67,SMARCA4,1,Missense,,P1_Baseline
+68,BTK,1,Missense,,P1_Baseline
+69,BCORL1,1,Missense,,P1_Baseline
+70,IRF2,1,Missense,,P1_Baseline
+71,SMAD4,1,Missense,,P1_Baseline
+72,VEGFA,1,Missense,,P1_Baseline
+73,RARA,1,Missense,,P1_Baseline
+74,PDGFRA,1,Missense,,P1_Baseline
+75,BARD1,1,Missense,,P1_Baseline
+76,IKZF1,1,Missense,,P1_Baseline
+77,GRM3,1,Missense,,P1_Baseline
+78,ATRX,1,Missense,,P1_Baseline
+79,MAP3K13,1,Missense,,P1_Baseline
+80,ERCC4,1,Missense,,P1_Baseline
+81,EPHB4,1,Missense,,P1_Baseline
+82,MLL,1,Missense,,P1_Baseline
+83,RAD21,1,Missense,,P1_Baseline
+85,HNF1A,1,Missense,,P1_Baseline
+86,FAS,1,Missense,,P1_Baseline
+87,PPP2R1A,1,Nonsense,,P1_Baseline
+88,FAM123B,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+89,AXIN1,1,Missense,,P1_Baseline
+90,ERBB3,1,Missense,,P1_Baseline
+91,ATRX,1,Missense,,P1_Baseline
+92,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+93,AR,1,Nonsense,,P1_Baseline
+94,APC,1,Missense,,P1_Baseline
+95,CXCR4,1,Missense,,P1_Baseline
+96,NTRK2,1,Missense,,P1_Baseline
+97,APC,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+99,ARAF,1,Missense,,P1_Baseline
+100,ATR,1,Missense,,P1_Baseline
+101,FANCA,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+102,SETD2,1,Missense,,P1_Baseline
+103,STAG2,1,Missense,,P1_Baseline
+104,BCOR,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Baseline
+106,PIK3CA,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+107,RICTOR,1,Missense,,P1_Baseline
+108,ERCC4,1,Missense,,P1_Baseline
+109,IKZF1,1,Missense,,P1_Baseline
+110,GNAS,1,Missense,,P1_Baseline
+111,FANCA,1,Missense,,P1_Baseline
+112,APC,1,Missense,,P1_Baseline
+113,APC,1,Missense,,P1_Baseline
+114,BRAF,1,Missense,,P1_Baseline
+115,FGFR1,1,Missense,,P1_Baseline
+116,FGF12,1,Missense,,P1_Baseline
+117,PTCH1,1,Missense,,P1_Baseline
+118,BRAF,1,Missense,,P1_Baseline
+119,BRAF,1,Missense,Pathogenic / Likely Pathogenic,P1_Baseline
+120,IKZF1,1,Missense,,P1_Baseline
+121,NOTCH3,1,Missense,,P1_EOT
+123,TET2,1,Frameshift Deletion,Pathogenic / Likely Pathogenic,P1_EOT
+124,MAP2K2,1,Missense,Pathogenic / Likely Pathogenic,P1_EOT
+127,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_EOT
+128,ARAF,1,Missense,,P1_EOT
+129,GNAS,1,Missense,,P1_EOT
+130,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_EOT
+131,NF1,1,Missense,,P1_Follow-up
+132,TET2,1,Frameshift Deletion,Pathogenic / Likely Pathogenic,P1_Follow-up
+133,NOTCH3,1,Missense,,P1_Follow-up
+134,GNAS,1,Missense,,P1_Follow-up
+135,MAP2K2,1,Missense,Pathogenic / Likely Pathogenic,P1_Follow-up
+137,ARAF,1,Missense,,P1_Follow-up
+140,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_Follow-up
+141,AKT1,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+142,SMARCA4,2,Missense,,P2_Baseline
+143,GABRA6,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+144,MSH2,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+145,PDK1,2,Missense,,P2_Baseline
+146,CDH1,2,Frameshift Deletion,Pathogenic / Likely Pathogenic,P2_Baseline
+147,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+150,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+152,PBRM1,2,Missense,,P2_Baseline
+153,BRCA1,2,Frameshift Insertion,Pathogenic / Likely Pathogenic,P2_Baseline
+154,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_Baseline
+155,ALK,2,Missense,,P2_Baseline
+156,ERBB4,2,Missense,,P2_Baseline
+157,NOTCH1,2,Missense,,P2_Baseline
+158,CDH1,2,Frameshift Deletion,Pathogenic / Likely Pathogenic,P2_EOT
+159,NOTCH1,2,Missense,,P2_EOT
+160,ERBB4,2,Missense,,P2_EOT
+161,MSH2,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+163,AKT1,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+164,BRCA1,2,Frameshift Insertion,Pathogenic / Likely Pathogenic,P2_EOT
+165,PDK1,2,Missense,,P2_EOT
+166,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+167,GABRA6,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+168,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+169,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_EOT
+170,PBRM1,2,Missense,,P2_EOT
+171,ALK,2,Missense,,P2_EOT
+172,SMARCA4,2,Missense,,P2_EOT
+174,MSH2,2,Missense,Pathogenic / Likely Pathogenic,P2_C1D15
+175,ALK,2,Missense,,P2_C1D15
+178,AKT2,2,Missense,,P2_C1D15
+179,PDK1,2,Missense,,P2_C1D15
+180,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_C1D15
+181,SMARCA4,2,Missense,,P2_C1D15
+182,BRCA1,2,Frameshift Insertion,Pathogenic / Likely Pathogenic,P2_C1D15
+183,CDH1,2,Frameshift Deletion,Pathogenic / Likely Pathogenic,P2_C1D15
+184,NOTCH1,2,Missense,,P2_C1D15
+185,TP53,2,Missense,Pathogenic / Likely Pathogenic,P2_C1D15
+186,PBRM1,2,Missense,,P2_C1D15
+187,GABRA6,2,Missense,Pathogenic / Likely Pathogenic,P2_C1D15
+190,ERBB4,2,Missense,,P2_C1D15
+191,AKT1,2,Missense,Pathogenic / Likely Pathogenic,P2_C1D15
+193,DDR2,3,Missense,,P3_Baseline
+196,FGFR2,3,Missense,Pathogenic / Likely Pathogenic,P3_Baseline
+198,HGF,3,Missense,,P3_Baseline
+199,GATA6,3,Missense,,P3_Baseline
+202,NKX2-1,3,Missense,,P3_Baseline
+204,MLH1,3,Missense,,P3_Baseline
+206,WT1,3,Splice Site,Pathogenic / Likely Pathogenic,P3_Baseline
+207,TP53,3,Missense,Pathogenic / Likely Pathogenic,P3_Baseline
+209,CUL4A,3,Missense,,P3_Baseline
+212,TP53,3,Missense,Pathogenic / Likely Pathogenic,P3_C2D1
+213,BCORL1,3,Missense,,P3_C2D1
+214,GATA6,3,Missense,,P3_C2D1
+215,MLH1,3,Missense,,P3_C2D1
+216,CUL4A,3,Missense,,P3_C2D1
+222,NKX2-1,3,Missense,,P3_C2D1
+227,HGF,3,Missense,,P3_C2D1
+228,WT1,3,Splice Site,Pathogenic / Likely Pathogenic,P3_C2D1
+229,DDR2,3,Missense,,P3_C2D1
+237,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+238,ERBB2,4,Missense,,P4_Baseline
+239,SPEN,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+241,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+242,PALB2,4,Missense,,P4_Baseline
+243,ROS1,4,Missense,,P4_Baseline
+244,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+245,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+246,SMARCB1,4,Missense,,P4_Baseline
+248,BCOR,4,Missense,,P4_Baseline
+249,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+250,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+251,AXIN1,4,Missense,,P4_Baseline
+253,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+254,CDK12,4,Missense,,P4_Baseline
+255,SDHA,4,Missense,,P4_Baseline
+256,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+257,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+258,BRCA2,4,In Frame Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+259,BRCA2,4,Missense,,P4_Baseline
+260,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+262,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+263,CSF3R,4,Missense,,P4_Baseline
+264,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+265,BRCA2,4,Nonsense,Pathogenic / Likely Pathogenic,P4_Baseline
+268,MST1R,4,Missense,,P4_Baseline
+269,BRCA2,4,In Frame Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+270,APC,4,Missense,,P4_Baseline
+271,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+273,FANCA,4,Frameshift Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+274,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+275,MTOR,4,Missense,,P4_Baseline
+276,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+277,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+279,BRCA2,4,Missense,,P4_Baseline
+280,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+281,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+282,MLL,4,Missense,,P4_Baseline
+283,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+284,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+285,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+286,ASXL1,4,Missense,,P4_Baseline
+287,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+288,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+289,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+290,BRCA2,4,In Frame Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+291,KDR,4,Missense,,P4_Baseline
+292,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+293,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Baseline
+294,BRCA2,4,In Frame Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+295,ESR1,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+296,MED12,4,Missense,,P4_Baseline
+297,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+298,SMAD2,4,Missense,,P4_Baseline
+299,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+300,SPEN,4,Missense,,P4_Baseline
+301,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+302,RAC1,4,Missense,,P4_Baseline
+303,ESR1,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+305,PRDM1,4,Missense,,P4_Baseline
+306,BRCA2,4,Missense,,P4_Baseline
+308,CDH1,4,Missense,,P4_Baseline
+309,BRCA2,4,Missense,Pathogenic / Likely Pathogenic,P4_Baseline
+310,BRCA2,4,In Frame Deletion,Pathogenic / Likely Pathogenic,P4_Baseline
+311,EPHA3,4,Missense,,P4_Baseline
+312,ALK,4,Missense,,P4_Baseline
+313,MAP3K1,4,Missense,,P4_Baseline
+314,BRCA2,4,Missense,,P4_Baseline
+319,KIT,5,Missense,,P5_Baseline
+320,TP53,5,In Frame Deletion,Pathogenic / Likely Pathogenic,P5_Baseline
+321,SPEN,5,Missense,,P5_Baseline
+322,FOXL2,5,Missense,,P5_Baseline
+323,BCORL1,5,Splice Site,Pathogenic / Likely Pathogenic,P5_Baseline
+324,SMO,5,Missense,Pathogenic / Likely Pathogenic,P5_Baseline
+325,EP300,5,Missense,,P5_Baseline
+326,FH,5,Missense,,P5_Baseline
+329,EZH2,5,Missense,,P5_Baseline
+332,CDK6,5,Missense,,P5_C2D1
+333,CDH1,5,Missense,,P5_C2D1
+335,BCORL1,5,Splice Site,Pathogenic / Likely Pathogenic,P5_C2D1
+336,TP53,5,In Frame Deletion,Pathogenic / Likely Pathogenic,P5_C2D1
+337,SMARCB1,5,Missense,,P5_C2D1
+339,CREBBP,5,Missense,,P5_C2D1
+340,FH,5,Missense,,P5_C2D1
+341,KIT,5,Missense,,P5_C2D1
+342,EP300,5,Missense,,P5_C2D1
+343,SPOP,5,Missense,,P5_C2D1
+344,SPEN,5,Missense,,P5_C2D1
+345,FOXL2,5,Missense,,P5_C2D1
+350,BCORL1,6,Missense,,P6_Baseline
+351,PTEN,6,Missense,,P6_Baseline
+352,RB1,6,Missense,,P6_Baseline
+353,SPOP,6,Splice Site,,P6_Baseline
+354,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_Baseline
+355,MST1R,6,Missense,,P6_Baseline
+356,CSF3R,6,Missense,,P6_Baseline
+357,NOTCH2,6,Missense,,P6_Baseline
+358,POLE,6,Missense,,P6_Baseline
+359,PIK3CA,6,Missense,Pathogenic / Likely Pathogenic,P6_Baseline
+360,BCL6,6,Missense,,P6_Baseline
+362,BCORL1,6,Nonsense,Pathogenic / Likely Pathogenic,P6_Baseline
+363,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_Baseline
+371,BCORL1,6,Nonsense,Pathogenic / Likely Pathogenic,P6_EOT
+373,RB1,6,Missense,,P6_EOT
+374,SPOP,6,Splice Site,,P6_EOT
+375,CSF3R,6,Missense,,P6_EOT
+376,NOTCH3,6,Missense,,P6_EOT
+377,POLE,6,Missense,,P6_EOT
+378,BCORL1,6,Missense,,P6_EOT
+379,NOTCH2,6,Missense,,P6_EOT
+380,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_EOT
+381,MST1R,6,Missense,,P6_EOT
+382,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_EOT
+383,PIK3CA,6,Missense,Pathogenic / Likely Pathogenic,P6_EOT
+384,PTEN,6,Missense,,P6_EOT
+385,BCL6,6,Missense,,P6_EOT
+393,ALK,7,Missense,,P7_Baseline
+394,PPARG,7,Missense,,P7_Baseline
+395,ERRFI1,7,Missense,,P7_Baseline
+396,MTOR,7,Missense,,P7_Baseline
+397,PIK3C2G,7,Missense,,P7_Baseline
+398,CIC,7,Missense,,P7_Baseline
+399,GATA4,7,Missense,,P7_Baseline
+400,ROS1,7,Nonsense,,P7_Baseline
+401,PIK3R1,7,Missense,,P7_Baseline
+402,JAK3,7,Missense,,P7_Baseline
+403,TP53,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+404,SPEN,7,Missense,,P7_Baseline
+405,MEN1,7,Missense,,P7_Baseline
+407,MTOR,7,Missense,,P7_Baseline
+409,BCOR,7,Missense,,P7_Baseline
+410,FGFR4,7,Missense,,P7_Baseline
+411,CREBBP,7,Missense,,P7_Baseline
+412,NF2,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+413,CDKN2C,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+414,ARID1A,7,Missense,,P7_Baseline
+415,MAP3K13,7,Missense,,P7_Baseline
+416,SPOP,7,Missense,,P7_Baseline
+417,SMAD4,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+418,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+419,KDM5C,7,Missense,,P7_Baseline
+420,CIC,7,Missense,,P7_Baseline
+421,KDM5A,7,Missense,,P7_Baseline
+422,WHSC1L1,7,Missense,,P7_Baseline
+423,PTPRO,7,Missense,,P7_Baseline
+424,AURKB,7,Missense,,P7_Baseline
+425,CREBBP,7,Missense,,P7_Baseline
+426,REL,7,Missense,,P7_Baseline
+428,RAF1,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+429,FANCA,7,Missense,,P7_Baseline
+430,RAD52,7,Missense,,P7_Baseline
+431,MAP2K1,7,Missense,,P7_Baseline
+432,PIK3CB,7,Missense,,P7_Baseline
+433,PDK1,7,Missense,,P7_Baseline
+434,FANCA,7,Missense,,P7_Baseline
+435,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+437,AKT1,7,Missense,,P7_Baseline
+438,FAS,7,Missense,,P7_Baseline
+439,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+440,FAM123B,7,Missense,,P7_Baseline
+441,BRCA1,7,Missense,,P7_Baseline
+442,ARID1A,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+443,DAXX,7,Missense,,P7_Baseline
+444,SPEN,7,Missense,,P7_Baseline
+445,ATRX,7,Missense,,P7_Baseline
+446,MED12,7,Missense,,P7_Baseline
+448,CSF1R,7,Missense,,P7_Baseline
+449,NF1,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+450,DAXX,7,Missense,,P7_Baseline
+452,BRCA2,7,Missense,,P7_Baseline
+453,TP53,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+454,ERBB3,7,Missense,,P7_Baseline
+455,ERBB2,7,Missense,,P7_Baseline
+456,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+458,BCORL1,7,Missense,,P7_Baseline
+459,ARID1A,7,Missense,,P7_Baseline
+460,PPP2R1A,7,Missense,,P7_Baseline
+461,APC,7,Missense,,P7_Baseline
+463,MAP3K13,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+464,WHSC1L1,7,Missense,,P7_Baseline
+465,MEN1,7,Missense,,P7_Baseline
+466,MET,7,Missense,,P7_Baseline
+468,BARD1,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+469,IRS2,7,Missense,,P7_Baseline
+470,BRAF,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+471,WHSC1L1,7,Nonsense,,P7_Baseline
+472,BRCA2,7,Missense,,P7_Baseline
+474,SPEN,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Baseline
+475,TSC2,7,Missense,,P7_Baseline
+476,JAK3,7,Nonsense,,P7_Baseline
+477,NOTCH3,7,Missense,,P7_Baseline
+478,FGF14,7,Missense,,P7_Baseline
+479,HRAS,7,Missense,Pathogenic / Likely Pathogenic,P7_Baseline
+480,SMAD4,7,Missense,,P7_Baseline
+481,ATR,7,Missense,,P7_Baseline
+482,ATRX,7,Missense,,P7_Baseline
+483,IRF4,7,Missense,,P7_Baseline
+484,SPEN,7,Missense,,P7_Baseline
+485,ATR,7,Missense,,P7_Baseline
+486,DIS3,7,Missense,,P7_Baseline
+487,TSC1,7,Missense,,P7_Baseline
+488,POLE,7,Missense,,P7_Baseline
+489,MEF2B,7,Missense,,P7_Baseline
+490,EGFR,7,Missense,,P7_Baseline
+491,MSH2,7,Missense,,P7_Baseline
+492,IDH1,7,Missense,,P7_Baseline
+493,ALK,7,Missense,,P7_Baseline
+496,BRCA2,7,Frameshift Deletion,Pathogenic / Likely Pathogenic,P7_C3D1
+497,CIC,7,Missense,,P7_C3D1
+499,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C3D1
+500,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C3D1
+501,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C3D1
+507,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C4D1
+510,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C4D1
+511,BCORL1,7,Missense,Pathogenic / Likely Pathogenic,P7_C4D1
+513,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C4D1
+514,ARID1A,7,Missense,,P7_C4D1
+515,ARID1A,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C4D1
+516,CIC,7,Missense,,P7_C4D1
+519,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C6D1
+520,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C6D1
+522,BCORL1,7,Missense,Pathogenic / Likely Pathogenic,P7_C6D1
+523,PRKCI,7,Missense,,P7_C6D1
+525,SPEN,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C6D1
+526,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C6D1
+528,ARID1A,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C6D1
+531,RARA,7,Missense,Pathogenic / Likely Pathogenic,P7_C6D1
+533,ARID1A,7,Missense,,P7_C6D1
+534,CIC,7,Missense,,P7_C6D1
+536,BCOR,7,Missense,,P7_C8D1
+537,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C8D1
+538,CIC,7,Missense,,P7_C8D1
+539,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C8D1
+541,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C8D1
+550,CIC,7,Missense,,P7_C12D15
+551,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C12D15
+552,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C12D15
+555,CIC,7,Missense,,P7_C14D1
+556,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C14D1
+558,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C14D1
+561,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C14D1
+562,PRKCI,7,Missense,,P7_C16D1
+563,CIC,7,Missense,,P7_C16D1
+564,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C16D1
+568,BCOR,7,Missense,,P7_C16D1
+571,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C16D1
+573,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C16D1
+575,CIC,7,Missense,,P7_C18D1
+576,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C18D1
+577,ARID1A,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C18D1
+578,SPEN,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C18D1
+579,NBN,7,Missense,,P7_C18D1
+580,BCOR,7,Missense,,P7_C18D1
+581,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_C18D1
+582,MTOR,7,Missense,,P7_C18D1
+583,BCORL1,7,Missense,Pathogenic / Likely Pathogenic,P7_C18D1
+586,ARID1A,7,Missense,,P7_C18D1
+587,RARA,7,Missense,Pathogenic / Likely Pathogenic,P7_C18D1
+588,PRKCI,7,Missense,,P7_C18D1
+590,MLL,7,Nonsense,Pathogenic / Likely Pathogenic,P7_C18D1
+591,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_C18D1
+592,BRCA2,7,Frameshift Deletion,Pathogenic / Likely Pathogenic,P7_C18D1
+594,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_EOT
+597,CIC,7,Missense,,P7_EOT
+598,TET2,7,Nonsense,Pathogenic / Likely Pathogenic,P7_EOT
+599,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_EOT
+603,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_EOT
+605,MRE11A,8,Missense,,P8_Baseline
+606,FAM123B,8,Missense,,P8_Baseline
+607,TIPARP,8,Missense,,P8_Baseline
+608,EPHA3,8,Missense,Pathogenic / Likely Pathogenic,P8_Baseline
+609,MERTK,8,Missense,,P8_Baseline
+610,IRF4,8,Missense,,P8_Baseline
+611,BCL2L2,8,Missense,,P8_Baseline
+612,PIK3CA,8,Missense,Pathogenic / Likely Pathogenic,P8_Baseline
+613,BCOR,8,Missense,,P8_Baseline
+614,GNAS,8,Missense,,P8_Baseline
+615,KDM5A,8,Nonsense,,P8_Baseline
+616,EP300,8,Missense,,P8_Baseline
+617,FGFR2,8,Missense,,P8_Baseline
+618,SETD2,8,Missense,,P8_Baseline
+619,MET,8,Missense,,P8_Baseline
+620,BRD4,8,Missense,,P8_Baseline
+621,NOTCH2,8,Frameshift Deletion,Pathogenic / Likely Pathogenic,P8_Baseline
+622,CCND3,8,Missense,,P8_Baseline
+623,TP53,8,Splice Site,Pathogenic / Likely Pathogenic,P8_Baseline
+624,ESR1,8,Missense,Pathogenic / Likely Pathogenic,P8_Baseline
+625,PDGFRB,8,Missense,Pathogenic / Likely Pathogenic,P8_Baseline
+626,POLE,8,Missense,,P8_Baseline
+653,MRE11A,8,Missense,,P8_C2D1
+654,GNAS,8,Missense,,P8_C2D1
+655,TP53,8,Splice Site,Pathogenic / Likely Pathogenic,P8_C2D1
+656,EPHA3,8,Missense,Pathogenic / Likely Pathogenic,P8_C2D1
+657,NOTCH2,8,Frameshift Deletion,Pathogenic / Likely Pathogenic,P8_C2D1
+658,EP300,8,Missense,,P8_C2D1
+659,MERTK,8,Missense,,P8_C2D1
+660,BCL2L2,8,Missense,,P8_C2D1
+661,PIK3CA,8,Missense,Pathogenic / Likely Pathogenic,P8_C2D1
+662,BCOR,8,Missense,,P8_C2D1
+663,CCND3,8,Missense,,P8_C2D1
+664,ESR1,8,Missense,Pathogenic / Likely Pathogenic,P8_C2D1
+665,MET,8,Missense,,P8_C2D1
+666,FGFR2,8,Missense,,P8_C2D1
+667,IRF4,8,Missense,,P8_C2D1
+668,GNAS,8,Missense,,P8_C2D1
+669,FAM123B,8,Missense,,P8_C2D1
+670,KDM5A,8,Nonsense,,P8_C2D1
+671,TIPARP,8,Missense,,P8_C2D1
+689,TP53,9,Nonsense,Pathogenic / Likely Pathogenic,P9_Baseline
+690,ATR,9,Missense,,P9_Baseline
+691,RAF1,9,Missense,,P9_Baseline
+692,PARK2,9,Missense,,P9_Baseline
+693,SF3B1,9,Missense,,P9_Baseline
+694,ALK,9,Missense,,P9_Baseline
+695,BCORL1,9,Missense,,P9_Baseline
+698,ATRX,9,Missense,,P9_Baseline
+706,TP53,9,Nonsense,Pathogenic / Likely Pathogenic,P9_C2D1
+708,SF3B1,9,Missense,,P9_C2D1
+709,ATRX,9,Missense,,P9_C2D1
+713,ALK,9,Missense,,P9_C2D1
+715,GABRA6,9,Missense,,P9_C2D1
+716,RAF1,9,Missense,,P9_C2D1
+717,PARK2,9,Missense,,P9_C2D1
+719,ATR,9,Missense,,P9_C2D1
+722,GNAS,10,Missense,,P10_Baseline
+723,CDH1,10,Nonsense,Pathogenic / Likely Pathogenic,P10_Baseline
+725,GATA3,10,Frameshift Insertion,Pathogenic / Likely Pathogenic,P10_Baseline
+726,FGF4,10,Missense,,P10_Baseline
+727,AKT2,10,Missense,,P10_Baseline
+729,SETD2,10,Missense,,P10_Baseline
+730,FGFR3,10,Missense,Pathogenic / Likely Pathogenic,P10_Baseline
+731,TEK,10,Missense,,P10_Baseline
+732,PTEN,10,Frameshift Deletion,Pathogenic / Likely Pathogenic,P10_Baseline
+734,EGFR,10,Missense,,P10_Baseline
+736,GNAS,10,Missense,,P10_Baseline
+737,EPHA3,10,Missense,,P10_Baseline
+738,PTEN,10,Splice Site,Pathogenic / Likely Pathogenic,P10_Baseline
+744,FGF12,11,Missense,,P11_Baseline
+745,PALB2,11,Frameshift Deletion,Pathogenic / Likely Pathogenic,P11_Baseline
+746,EPHB1,11,Missense,,P11_Baseline
+747,PIK3CB,11,Missense,,P11_Baseline
+748,IKZF1,11,Missense,,P11_Baseline
+749,TP53,11,Missense,Pathogenic / Likely Pathogenic,P11_Baseline
+750,SPEN,11,Missense,,P11_Baseline
+753,EPHB4,11,Missense,,P11_Baseline
+754,MDM4,11,Missense,,P11_Baseline
+758,MAP2K2,11,Missense,,P11_Baseline
+759,NOTCH1,11,Missense,,P11_Baseline
+760,TP53,11,Frameshift Insertion,Pathogenic / Likely Pathogenic,P11_Baseline
+762,IKBKE,11,Missense,,P11_Baseline
+766,PALB2,11,Frameshift Deletion,Pathogenic / Likely Pathogenic,P11_C4D1
+769,SPEN,11,Missense,,P11_C4D1
+771,TP53,11,Missense,Pathogenic / Likely Pathogenic,P11_C4D1
+772,MAP2K2,11,Missense,,P11_C4D1
+774,SPEN,11,Missense,,P11_EOT
+776,MAP2K2,11,Missense,,P11_EOT
+778,PALB2,11,Frameshift Deletion,Pathogenic / Likely Pathogenic,P11_EOT
+781,TP53,11,Missense,Pathogenic / Likely Pathogenic,P11_EOT
+783,MTOR,12,Missense,,P12_Baseline
+784,TP53,12,Missense,Pathogenic / Likely Pathogenic,P12_Baseline
+786,ESR1,12,Missense,Pathogenic / Likely Pathogenic,P12_Baseline
+787,CRKL,12,Missense,,P12_Baseline
+789,TP53,12,Frameshift Deletion,Pathogenic / Likely Pathogenic,P12_Baseline
+790,STAG2,12,Missense,,P12_Baseline
+792,PIK3CA,12,Missense,Pathogenic / Likely Pathogenic,P12_Baseline
+793,GNAS,12,Missense,,P12_Baseline
+794,KDR,12,Missense,,P12_Baseline
+795,STAG2,12,Nonsense,Pathogenic / Likely Pathogenic,P12_Baseline
+796,ALK,12,Missense,,P12_Baseline
+797,STK11,12,Missense,,P12_Baseline
+798,PIK3R1,12,Frameshift Deletion,Pathogenic / Likely Pathogenic,P12_Baseline
+799,ESR1,12,Missense,Pathogenic / Likely Pathogenic,P12_Baseline
+800,NF1,12,Missense,,P12_Baseline
+801,FAM123B,12,Missense,,P12_Baseline
+802,NF2,13,Nonsense,Pathogenic / Likely Pathogenic,P13_C2D1
+803,RARA,13,Missense,,P13_C2D1
+804,TP53,13,Missense,Pathogenic / Likely Pathogenic,P13_C2D1
+805,CXCR4,13,Missense,,P13_C2D1
+806,ESR1,13,Missense,Pathogenic / Likely Pathogenic,P13_C2D1
+807,DAXX,13,Missense,Pathogenic / Likely Pathogenic,P13_C2D1
+808,MDM4,13,Missense,Pathogenic / Likely Pathogenic,P13_C2D1
+809,NOTCH1,13,Missense,,P13_C2D1
+810,CARD11,13,Missense,,P13_C2D1
+813,FLT3,13,Missense,,P13_C2D1
+816,ERCC4,13,Missense,,P13_C2D1
+817,ZNF703,13,Missense,,P13_C2D1
+818,BCOR,13,Missense,,P13_C2D1
+819,MAP3K13,13,Missense,,P13_C2D1
+820,ATR,13,In Frame Deletion,Pathogenic / Likely Pathogenic,P13_C2D1
+821,WHSC1L1,13,Missense,,P13_C2D1
+822,PIK3CA,13,Missense,Pathogenic / Likely Pathogenic,P13_C2D1
+826,ERBB2,14,In Frame Insertion,Pathogenic / Likely Pathogenic,P14_Baseline
+827,ERBB2,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+828,RB1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+830,PBRM1,14,Missense,,P14_Baseline
+831,PIK3CB,14,Missense,,P14_Baseline
+832,BRIP1,14,Missense,,P14_Baseline
+833,ERBB2,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+834,ALOX12B,14,Missense,,P14_Baseline
+835,MEN1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Baseline
+837,CDH1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Baseline
+838,HDAC1,14,Missense,,P14_Baseline
+839,IDH1,14,Missense,,P14_Baseline
+840,DOT1L,14,Nonsense,,P14_Baseline
+841,MLL,14,Missense,,P14_Baseline
+842,RB1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+843,PALB2,14,Missense,,P14_Baseline
+844,NF1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Baseline
+845,MLL,14,Missense,,P14_Baseline
+846,BRCA1,14,Missense,,P14_Baseline
+847,PRKAR1A,14,Missense,,P14_Baseline
+849,RB1,14,Frameshift Insertion,Pathogenic / Likely Pathogenic,P14_Baseline
+850,KDM6A,14,Missense,,P14_Baseline
+851,ROS1,14,Missense,,P14_Baseline
+852,BRCA1,14,Missense,,P14_Baseline
+853,PIK3CA,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+854,SMARCB1,14,Missense,,P14_Baseline
+855,TP53,14,Missense,,P14_Baseline
+856,BRD4,14,Missense,,P14_Baseline
+857,CREBBP,14,Missense,,P14_Baseline
+858,KDR,14,Missense,,P14_Baseline
+859,ERBB2,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+860,RB1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+861,PALB2,14,Missense,,P14_Baseline
+862,CD274,14,Missense,,P14_Baseline
+863,IGF1R,14,Missense,,P14_Baseline
+864,BRCA1,14,Missense,,P14_Baseline
+865,APC,14,Missense,,P14_Baseline
+866,DDR1,14,Missense,,P14_Baseline
+867,ROS1,14,Missense,,P14_Baseline
+868,PIK3R1,14,Missense,,P14_Baseline
+869,KDM5A,14,Missense,,P14_Baseline
+870,NF1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+871,KEL,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+873,JAK1,14,Missense,,P14_Baseline
+874,PIK3CA,14,Missense,,P14_Baseline
+875,POLD1,14,Missense,,P14_Baseline
+876,APC,14,Missense,,P14_Baseline
+877,ERBB2,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+878,NF1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+880,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+884,GATA3,14,Missense,,P14_Baseline
+885,NF1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+886,BRIP1,14,Missense,,P14_Baseline
+887,MYD88,14,Missense,,P14_Baseline
+888,NF1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+889,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_Baseline
+891,CDK4,14,Missense,,P14_Baseline
+892,NF1,14,Nonsense,Pathogenic / Likely Pathogenic,P14_Baseline
+894,RAD51D,14,Missense,,P14_Baseline
+895,MTOR,14,Missense,,P14_Baseline
+897,RB1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Baseline
+898,ROS1,14,Missense,,P14_C2D1
+900,PRKAR1A,14,Missense,,P14_C2D1
+902,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C2D1
+904,KDR,14,Missense,,P14_C2D1
+905,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C2D1
+913,PRKAR1A,14,Missense,,P14_C3D1
+914,ROS1,14,Missense,,P14_C3D1
+919,KDR,14,Missense,,P14_C3D1
+925,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C3D1
+926,KDR,14,Missense,,P14_C4D1
+927,ROS1,14,Missense,,P14_C4D1
+929,PRKAR1A,14,Missense,,P14_C4D1
+933,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C4D1
+934,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C4D1
+942,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C6D1
+949,KDR,14,Missense,,P14_C6D1
+950,TET2,14,Frameshift Insertion,Pathogenic / Likely Pathogenic,P14_C6D1
+951,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C6D1
+956,PRKAR1A,14,Missense,,P14_C6D1
+957,ROS1,14,Missense,,P14_C6D1
+963,CDH1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_C9D1
+964,REL,14,Missense,,P14_C9D1
+967,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C9D1
+969,TET2,14,Frameshift Insertion,Pathogenic / Likely Pathogenic,P14_C9D1
+971,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C9D1
+972,ROS1,14,Missense,,P14_C9D1
+973,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C9D1
+974,KDR,14,Missense,,P14_C9D1
+977,ERBB2,14,In Frame Insertion,Pathogenic / Likely Pathogenic,P14_C9D1
+978,PRKAR1A,14,Missense,,P14_C9D1
+979,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_C8D1
+981,ERBB2,14,In Frame Insertion,Pathogenic / Likely Pathogenic,P14_C8D1
+983,ROS1,14,Missense,,P14_C8D1
+986,PRKAR1A,14,Missense,,P14_C8D1
+991,KDR,14,Missense,,P14_C8D1
+993,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_EOT
+996,ROS1,14,Missense,,P14_EOT
+997,KDR,14,Missense,,P14_EOT
+999,RBM10,14,Missense,,P14_EOT
+1000,REL,14,Missense,,P14_EOT
+1002,CDH1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_EOT
+1003,REL,14,Missense,,P14_EOT
+1005,MEN1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_EOT
+1006,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_EOT
+1008,PRKAR1A,14,Missense,,P14_EOT
+1012,ERBB2,14,In Frame Insertion,Pathogenic / Likely Pathogenic,P14_EOT
+1014,CSF3R,15,Nonsense,Pathogenic / Likely Pathogenic,P15_Baseline
+1015,EPHA3,15,Missense,,P15_Baseline
+1016,CDC73,15,Missense,,P15_Baseline
+1017,PRKAR1A,15,Missense,,P15_Baseline
+1018,AKT1,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1019,CD274,15,Missense,,P15_Baseline
+1020,PDGFRB,15,Nonsense,,P15_Baseline
+1021,MTOR,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1022,RAF1,15,Missense,,P15_Baseline
+1023,CREBBP,15,Missense,,P15_Baseline
+1024,RPTOR,15,Missense,,P15_Baseline
+1025,PIK3CA,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1026,POLE,15,Missense,,P15_Baseline
+1027,ATR,15,Missense,,P15_Baseline
+1028,PALB2,15,Nonsense,Pathogenic / Likely Pathogenic,P15_Baseline
+1030,TIPARP,15,Missense,,P15_Baseline
+1031,STAG2,15,Missense,,P15_Baseline
+1032,RB1,15,Missense,,P15_Baseline
+1033,CBL,15,Missense,,P15_Baseline
+1034,PDGFRA,15,Missense,,P15_Baseline
+1035,PTEN,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1036,CASP8,15,Nonsense,Pathogenic / Likely Pathogenic,P15_Baseline
+1037,CIC,15,Missense,,P15_Baseline
+1038,WT1,15,Missense,,P15_Baseline
+1039,DAXX,15,Missense,,P15_Baseline
+1040,STAT3,15,Missense,,P15_Baseline
+1041,MAP2K4,15,Missense,,P15_Baseline
+1042,PIK3CA,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1043,ATR,15,Missense,,P15_Baseline
+1045,TET2,15,Missense,,P15_Baseline
+1046,STK11,15,Missense,,P15_Baseline
+1047,CDKN1B,15,Nonsense,Pathogenic / Likely Pathogenic,P15_Baseline
+1048,TSC1,15,Missense,,P15_Baseline
+1049,TSC1,15,Missense,,P15_Baseline
+1050,RET,15,Missense,,P15_Baseline
+1051,ZNF217,15,Missense,,P15_Baseline
+1052,SYK,15,Missense,,P15_Baseline
+1053,CDK8,15,Missense,,P15_Baseline
+1054,KDM5A,15,Missense,,P15_Baseline
+1055,MDM4,15,Missense,,P15_Baseline
+1056,MED12,15,Missense,,P15_Baseline
+1057,GATA3,15,Missense,,P15_Baseline
+1058,GATA3,15,Missense,Pathogenic / Likely Pathogenic,P15_Baseline
+1060,PALB2,16,Frameshift Deletion,Pathogenic / Likely Pathogenic,P16_Baseline
+1061,RB1,16,Frameshift Deletion,Pathogenic / Likely Pathogenic,P16_Baseline
+1062,CIC,16,Missense,,P16_Baseline
+1065,IKBKE,16,Missense,,P16_Baseline
+1070,ERBB3,16,Missense,,P16_Baseline
+1071,STAG2,16,Missense,,P16_Baseline
+1073,RAD52,16,Missense,,P16_Baseline
+1076,POLE,16,Missense,,P16_C2D1
+1078,IKBKE,16,Missense,,P16_C2D1
+1079,AR,16,Nonsense,,P16_C2D1
+1082,RAD52,16,Missense,,P16_C2D1
+1085,PALB2,16,Frameshift Deletion,Pathogenic / Likely Pathogenic,P16_C2D1
+1087,SMARCA4,16,Missense,,P16_C2D1
+1088,ERBB3,16,Missense,,P16_C2D1
+1089,STK11,16,In Frame Deletion,Pathogenic / Likely Pathogenic,P16_C2D1
+1090,PTEN,16,Frameshift Deletion,Pathogenic / Likely Pathogenic,P16_C2D1
+1092,PARP1,16,Missense,,P16_C2D1
+1093,CIC,16,Missense,,P16_C2D1
+1096,RB1,16,Frameshift Deletion,Pathogenic / Likely Pathogenic,P16_C2D1
+1098,MYCN,17,Missense,,P17_Baseline
+1099,MPL,17,Missense,,P17_Baseline
+1100,SPEN,17,Missense,,P17_Baseline
+1102,CDH1,17,Frameshift Deletion,Pathogenic / Likely Pathogenic,P17_Baseline
+1103,PIK3CA,17,Missense,,P17_Baseline
+1105,NOTCH1,17,Missense,,P17_Baseline
+1106,TBX3,17,Missense,,P17_Baseline
+1108,PIK3CA,17,Missense,,P17_Baseline
+1110,TP53,17,Nonsense,Pathogenic / Likely Pathogenic,P17_Baseline
+1111,PIK3CA,17,Missense,Pathogenic / Likely Pathogenic,P17_Baseline
+1112,ERBB4,17,Missense,,P17_Baseline
+1119,TBX3,17,Missense,,P17_C2D1
+1120,CDH1,17,Frameshift Deletion,Pathogenic / Likely Pathogenic,P17_C2D1
+1121,TP53,17,Nonsense,Pathogenic / Likely Pathogenic,P17_C2D1
+1122,ERBB4,17,Missense,,P17_C2D1
+1123,SPEN,17,Missense,,P17_C2D1
+1125,PIK3CA,17,Missense,,P17_C2D1
+1126,MPL,17,Missense,,P17_C2D1
+1128,PIK3CA,17,Missense,Pathogenic / Likely Pathogenic,P17_C2D1
+1130,PIK3CA,17,Missense,,P17_C2D1
+1136,NF1,18,Missense,,P18_C2D1
+1138,FLT1,18,Missense,,P18_C2D1
+1140,MDM4,18,Missense,,P18_C2D1
+1141,TP53,18,Missense,Pathogenic / Likely Pathogenic,P18_C2D1
+1142,CTNNB1,18,Missense,,P18_C2D1
+1144,ESR1,18,Missense,Pathogenic / Likely Pathogenic,P18_C2D1
+1145,PARP3,18,Missense,,P18_C2D1
+1146,TET2,18,Frameshift Deletion,Pathogenic / Likely Pathogenic,P18_C2D1
+1147,GATA3,18,Frameshift Insertion,Pathogenic / Likely Pathogenic,P18_C2D1
+1149,KDM6A,18,Missense,,P18_C2D1
+1150,KEL,18,Missense,,P18_C2D1
+1151,SETD2,18,Missense,,P18_C2D1
+1153,KEL,18,Missense,,P18_C3D1
+1156,MDM4,18,Missense,,P18_C3D1
+1158,SETD2,18,Missense,,P18_C3D1
+1159,FLT1,18,Missense,,P18_C3D1
+1160,ESR1,18,Missense,Pathogenic / Likely Pathogenic,P18_C3D1
+1161,TET2,18,Frameshift Deletion,Pathogenic / Likely Pathogenic,P18_C3D1
+1162,CTNNB1,18,Missense,,P18_C3D1
+1164,EGFR,18,Missense,Pathogenic / Likely Pathogenic,P18_C3D1
+1165,KDM6A,18,Missense,,P18_C3D1
+1166,ALK,18,Missense,,P18_C3D1
+1167,FLT1,18,Missense,,P18_C3D1
+1168,GATA3,18,Frameshift Insertion,Pathogenic / Likely Pathogenic,P18_C3D1
+1171,MRE11A,19,Nonsense,Pathogenic / Likely Pathogenic,P19_Baseline
+1174,GNAS,19,Missense,,P19_Baseline
+1175,ROS1,19,Missense,,P19_Baseline
+1176,TP53,19,Missense,Pathogenic / Likely Pathogenic,P19_Baseline
+1178,PIK3CA,19,Missense,Pathogenic / Likely Pathogenic,P19_Baseline
+1179,NOTCH2,19,Frameshift Deletion,Pathogenic / Likely Pathogenic,P19_Baseline
+1188,ROS1,19,Missense,,P19_C2D1
+1189,PIK3CA,19,Missense,Pathogenic / Likely Pathogenic,P19_C2D1
+1190,GNAS,19,Missense,,P19_C2D1
+1191,MRE11A,19,Nonsense,Pathogenic / Likely Pathogenic,P19_C2D1
+1193,TP53,19,Missense,Pathogenic / Likely Pathogenic,P19_C2D1
+1196,SGK1,19,Missense,,P19_C2D1
+1199,NOTCH2,20,Missense,,P20_Baseline
+1200,BRCA2,20,Frameshift Deletion,Pathogenic / Likely Pathogenic,P20_Baseline
+1201,FAM123B,20,Missense,,P20_Baseline
+1202,BRCA2,20,Frameshift Insertion,Pathogenic / Likely Pathogenic,P20_Baseline
+1203,TP53,20,Frameshift Insertion,Pathogenic / Likely Pathogenic,P20_Baseline
+1204,NF2,20,Nonsense,Pathogenic / Likely Pathogenic,P20_Baseline
+1205,CTNNA1,20,Missense,,P20_Baseline
+1206,PTEN,20,Splice Site,Pathogenic / Likely Pathogenic,P20_Baseline
+1207,CREBBP,20,Missense,,P20_Baseline
+1208,BRCA2,20,Missense,Pathogenic / Likely Pathogenic,P20_Baseline
+1210,MDM4,20,Missense,Pathogenic / Likely Pathogenic,P20_Baseline
+1212,ROS1,20,Missense,,P20_Baseline
+1213,MSH6,20,Missense,,P20_Baseline
+1214,EPHA3,20,Missense,,P20_Baseline
+1215,FH,20,Missense,,P20_Baseline
+1220,BRCA2,20,Missense,,P20_EOT
+1221,BRCA2,20,Frameshift Deletion,Pathogenic / Likely Pathogenic,P20_EOT
+1222,TP53,20,Frameshift Insertion,Pathogenic / Likely Pathogenic,P20_EOT
+1223,NOTCH2,20,Missense,,P20_EOT
+1225,KDM5C,20,Missense,,P20_EOT
+1226,ROS1,20,Missense,,P20_EOT
+1227,FH,20,Missense,,P20_EOT
+1228,BRCA2,20,Frameshift Insertion,Pathogenic / Likely Pathogenic,P20_EOT
+1229,BRCA2,20,Missense,Pathogenic / Likely Pathogenic,P20_EOT
+1230,NF2,20,Nonsense,Pathogenic / Likely Pathogenic,P20_EOT
+1231,MDM4,20,Missense,Pathogenic / Likely Pathogenic,P20_EOT
+1232,PTEN,20,Splice Site,Pathogenic / Likely Pathogenic,P20_EOT
+1233,CTNNA1,20,Missense,,P20_EOT
+1234,EPHA3,20,Missense,,P20_EOT
+1235,MSH6,20,Missense,,P20_EOT
+1236,CREBBP,20,Missense,,P20_EOT
+1241,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_Baseline
+1242,CSF1R,21,Missense,,P21_Baseline
+1243,ATR,21,Missense,,P21_Baseline
+1245,BTK,21,Nonsense,,P21_Baseline
+1246,SDHB,21,Missense,,P21_Baseline
+1247,FBXW7,21,Missense,,P21_Baseline
+1249,CDH1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_Baseline
+1250,PAX5,21,Missense,,P21_Baseline
+1251,CTNNA1,21,Missense,,P21_Baseline
+1253,GATA3,21,Missense,Pathogenic / Likely Pathogenic,P21_Baseline
+1254,DDR1,21,Missense,,P21_Baseline
+1255,MED12,21,Missense,,P21_Baseline
+1256,IRF2,21,Missense,,P21_Baseline
+1257,CDKN1B,21,Nonsense,Pathogenic / Likely Pathogenic,P21_Baseline
+1258,TBX3,21,Frameshift Insertion,Pathogenic / Likely Pathogenic,P21_Baseline
+1259,CDK12,21,Missense,,P21_Baseline
+1260,MDM4,21,Missense,,P21_Baseline
+1261,KLHL6,21,Missense,,P21_Baseline
+1262,SDHA,21,Missense,,P21_Baseline
+1263,HGF,21,Missense,,P21_Baseline
+1264,MST1R,21,Missense,,P21_Baseline
+1265,IGF1R,21,Nonsense,,P21_Baseline
+1266,SOX9,21,Missense,,P21_Baseline
+1267,ARID1A,21,Nonsense,Pathogenic / Likely Pathogenic,P21_Baseline
+1268,JAK1,21,Nonsense,,P21_Baseline
+1270,BRIP1,21,Missense,,P21_Baseline
+1271,STAG2,21,Missense,,P21_Baseline
+1272,PIK3C2B,21,Missense,,P21_Baseline
+1273,BCOR,21,Missense,,P21_Baseline
+1274,PALB2,21,Missense,,P21_Baseline
+1275,MSH3,21,Missense,,P21_Baseline
+1276,MDM4,21,Missense,,P21_Baseline
+1277,NBN,21,Missense,,P21_Baseline
+1278,ERCC4,21,Missense,,P21_Baseline
+1279,PIK3R1,21,Missense,,P21_Baseline
+1282,ESR1,21,Missense,Pathogenic / Likely Pathogenic,P21_Baseline
+1283,PARP1,21,Missense,,P21_Baseline
+1284,IRS2,21,Missense,,P21_Baseline
+1285,IRS2,21,Missense,,P21_Baseline
+1286,JAK1,21,Missense,,P21_Baseline
+1287,NT5C2,21,Missense,,P21_Baseline
+1288,NBN,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_Baseline
+1290,SDHB,21,Missense,,P21_Baseline
+1291,FANCA,21,Missense,,P21_Baseline
+1292,PARP3,21,Missense,,P21_Baseline
+1295,MET,21,Missense,,P21_C2D1
+1296,MST1R,21,Missense,,P21_C2D1
+1297,IGF1R,21,Missense,,P21_C2D1
+1298,VEGFA,21,Missense,,P21_C2D1
+1299,BRD4,21,Missense,,P21_C2D1
+1300,JAK1,21,Nonsense,,P21_C2D1
+1302,SETD2,21,Missense,,P21_C2D1
+1303,ERCC4,21,Missense,,P21_C2D1
+1305,TBX3,21,Frameshift Insertion,Pathogenic / Likely Pathogenic,P21_C2D1
+1306,IRF2,21,Missense,,P21_C2D1
+1307,FBXW7,21,Missense,,P21_C2D1
+1308,ATR,21,Missense,,P21_C2D1
+1309,SETD2,21,Missense,,P21_C2D1
+1310,MEF2B,21,Missense,,P21_C2D1
+1312,MDM4,21,Missense,,P21_C2D1
+1313,FGFR1,21,Missense,,P21_C2D1
+1314,CDKN1B,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C2D1
+1315,MED12,21,Missense,,P21_C2D1
+1316,IGF1R,21,Nonsense,,P21_C2D1
+1317,FOXL2,21,Missense,,P21_C2D1
+1318,RBM10,21,Missense,,P21_C2D1
+1319,CDK12,21,Missense,,P21_C2D1
+1320,AXIN1,21,Missense,Pathogenic / Likely Pathogenic,P21_C2D1
+1321,EPHB4,21,Missense,,P21_C2D1
+1322,IRS2,21,Missense,,P21_C2D1
+1323,ATR,21,Missense,,P21_C2D1
+1325,PIK3R1,21,Missense,,P21_C2D1
+1326,ALK,21,Missense,Pathogenic / Likely Pathogenic,P21_C2D1
+1327,HGF,21,Missense,,P21_C2D1
+1329,TET2,21,Missense,,P21_C2D1
+1330,TGFBR2,21,Missense,,P21_C2D1
+1331,PIK3R1,21,Missense,,P21_C2D1
+1332,NOTCH3,21,Missense,,P21_C2D1
+1333,BRCA2,21,Missense,,P21_C2D1
+1334,SDHB,21,Missense,,P21_C2D1
+1335,BRIP1,21,Missense,,P21_C2D1
+1336,WHSC1L1,21,Missense,,P21_C2D1
+1338,PAX5,21,Missense,,P21_C2D1
+1339,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_C2D1
+1340,MED12,21,Missense,,P21_C2D1
+1342,PIK3C2G,21,Missense,,P21_C2D1
+1343,MSH3,21,Missense,,P21_C2D1
+1344,CHEK1,21,Missense,,P21_C2D1
+1345,PARP1,21,Missense,,P21_C2D1
+1346,CDH1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_C2D1
+1347,CTNNB1,21,Missense,,P21_C2D1
+1348,NKX2-1,21,Missense,,P21_C2D1
+1349,TET2,21,Missense,,P21_C2D1
+1350,ATRX,21,Missense,,P21_C2D1
+1351,FOXL2,21,Missense,,P21_C2D1
+1352,BCOR,21,Missense,,P21_C2D1
+1353,IRS2,21,Missense,,P21_C2D1
+1354,NBN,21,Missense,,P21_C2D1
+1355,MTOR,21,Missense,,P21_C2D1
+1356,IRF2,21,Missense,,P21_C2D1
+1357,APC,21,Missense,,P21_C2D1
+1358,GATA3,21,Missense,Pathogenic / Likely Pathogenic,P21_C2D1
+1359,KDR,21,Missense,,P21_C2D1
+1360,BCOR,21,Missense,,P21_C2D1
+1361,ARID1A,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C2D1
+1362,KDM5A,21,Missense,,P21_C2D1
+1363,ERG,21,Missense,,P21_C2D1
+1364,MED12,21,Missense,,P21_C2D1
+1365,JAK1,21,Missense,,P21_C2D1
+1366,NF1,21,Missense,,P21_C2D1
+1367,WHSC1,21,Nonsense,,P21_C2D1
+1369,SDHB,21,Missense,,P21_C2D1
+1370,MDM4,21,Missense,,P21_C2D1
+1371,NOTCH1,21,Missense,,P21_C2D1
+1372,SOX9,21,Missense,,P21_C2D1
+1373,CARD11,21,Missense,,P21_C2D1
+1374,NF1,21,Missense,,P21_C2D1
+1375,NTRK1,21,Missense,,P21_C2D1
+1376,ESR1,21,Missense,Pathogenic / Likely Pathogenic,P21_C2D1
+1377,RB1,21,Missense,,P21_C2D1
+1378,BRCA1,21,Missense,,P21_C2D1
+1379,CTNNA1,21,Missense,,P21_C2D1
+1380,FANCA,21,Missense,,P21_C2D1
+1381,PARP3,21,Missense,,P21_C2D1
+1382,CSF1R,21,Missense,,P21_C2D1
+1385,MYCL1,21,Missense,,P21_C2D1
+1386,SDHA,21,Missense,,P21_C2D1
+1387,MCL1,21,Missense,,P21_C2D1
+1388,JAK3,21,Missense,,P21_C2D1
+1389,EPHA3,21,Missense,,P21_C2D1
+1393,BRCA2,21,Missense,,P21_C3D1
+1394,IDH1,21,Missense,,P21_C3D1
+1395,PAX5,21,Missense,,P21_C3D1
+1396,JAK1,21,Nonsense,,P21_C3D1
+1397,GNAS,21,Missense,,P21_C3D1
+1398,NOTCH1,21,Missense,,P21_C3D1
+1399,ATRX,21,Missense,,P21_C3D1
+1400,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_C3D1
+1401,PIK3R1,21,Missense,,P21_C3D1
+1402,TGFBR2,21,Missense,,P21_C3D1
+1403,TSC2,21,Missense,,P21_C3D1
+1404,SDHB,21,Missense,,P21_C3D1
+1405,CD274,21,Missense,,P21_C3D1
+1406,BRCA2,21,Missense,,P21_C3D1
+1407,KDR,21,Missense,,P21_C3D1
+1408,SOX9,21,Missense,,P21_C3D1
+1409,PIK3C2B,21,Missense,,P21_C3D1
+1410,BRIP1,21,Missense,,P21_C3D1
+1411,CDH1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_C3D1
+1412,ATR,21,Missense,,P21_C3D1
+1413,IRS2,21,Missense,,P21_C3D1
+1414,IRS2,21,Missense,,P21_C3D1
+1415,PIK3R1,21,Missense,,P21_C3D1
+1416,MED12,21,Missense,,P21_C3D1
+1418,FANCC,21,Missense,,P21_C3D1
+1419,CTNNA1,21,Missense,,P21_C3D1
+1420,IGF1R,21,Nonsense,,P21_C3D1
+1421,EMSY,21,Missense,,P21_C3D1
+1422,NF1,21,Missense,,P21_C3D1
+1423,DDR1,21,Missense,,P21_C3D1
+1424,IRF2,21,Missense,,P21_C3D1
+1425,TBX3,21,Frameshift Insertion,Pathogenic / Likely Pathogenic,P21_C3D1
+1426,JAK3,21,Missense,,P21_C3D1
+1427,FOXL2,21,Missense,,P21_C3D1
+1429,FOXL2,21,Missense,,P21_C3D1
+1430,NBN,21,Missense,,P21_C3D1
+1432,WHSC1,21,Missense,,P21_C3D1
+1433,FANCA,21,Missense,,P21_C3D1
+1434,MDM4,21,Missense,,P21_C3D1
+1435,PALB2,21,Missense,,P21_C3D1
+1437,NT5C2,21,Missense,,P21_C3D1
+1438,MCL1,21,Missense,,P21_C3D1
+1439,ESR1,21,Missense,Pathogenic / Likely Pathogenic,P21_C3D1
+1440,CDKN1B,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C3D1
+1441,RAF1,21,Missense,,P21_C3D1
+1442,MSH3,21,Missense,,P21_C3D1
+1443,ERCC4,21,Missense,,P21_C3D1
+1445,GNA13,21,Missense,,P21_C3D1
+1446,GNAS,21,Missense,,P21_C3D1
+1447,ACVR1B,21,Splice Site,Pathogenic / Likely Pathogenic,P21_C3D1
+1448,CSF1R,21,Missense,,P21_C3D1
+1449,MDM4,21,Missense,,P21_C3D1
+1450,PARP2,21,Missense,,P21_C3D1
+1451,MED12,21,Missense,,P21_C3D1
+1452,GATA3,21,Missense,Pathogenic / Likely Pathogenic,P21_C3D1
+1453,ERG,21,Missense,,P21_C3D1
+1454,ATR,21,Missense,,P21_C3D1
+1456,HGF,21,Missense,,P21_C3D1
+1457,CTNNB1,21,Missense,,P21_C3D1
+1458,RB1,21,Missense,,P21_C3D1
+1460,FGFR2,21,Missense,,P21_C3D1
+1461,CARD11,21,Missense,,P21_C3D1
+1462,PARP1,21,Missense,,P21_C3D1
+1463,FBXW7,21,Missense,,P21_C3D1
+1464,NKX2-1,21,Missense,,P21_C3D1
+1465,PARP3,21,Missense,,P21_C3D1
+1466,WHSC1L1,21,Missense,,P21_C3D1
+1468,CIC,21,Missense,,P21_C3D1
+1469,SDHB,21,Missense,,P21_C3D1
+1470,AXIN1,21,Missense,,P21_C3D1
+1471,ARID1A,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C3D1
+1472,KDM5A,21,Missense,,P21_C3D1
+1473,ATR,21,Missense,,P21_C3D1
+1474,AXIN1,21,Missense,Pathogenic / Likely Pathogenic,P21_C3D1
+1476,MET,21,Missense,,P21_C3D1
+1477,SDHA,21,Missense,,P21_C3D1
+1478,MED12,21,Missense,,P21_C3D1
+1479,NTRK1,21,Missense,,P21_C3D1
+1480,JAK1,21,Missense,,P21_C3D1
+1482,AR,21,Missense,,P21_C3D1
+1483,CDK12,21,Missense,,P21_C3D1
+1484,BCORL1,21,Missense,,P21_C3D1
+1485,BRIP1,21,Missense,,P21_C3D1
+1486,JAK2,21,Missense,,P21_C3D1
+1487,BCOR,21,Missense,,P21_C3D1
+1488,ATR,21,Missense,,P21_C3D1
+1491,PIK3R1,21,Missense,,P21_C4D1
+1492,SPEN,21,Missense,,P21_C4D1
+1494,BCOR,21,Missense,,P21_C4D1
+1495,GNA13,21,Missense,,P21_C4D1
+1496,RB1,21,Missense,,P21_C4D1
+1497,JAK1,21,Nonsense,,P21_C4D1
+1498,IDH1,21,Missense,,P21_C4D1
+1499,PALB2,21,Missense,,P21_C4D1
+1500,CUL4A,21,Missense,,P21_C4D1
+1501,WHSC1L1,21,Missense,,P21_C4D1
+1502,IGF1R,21,Nonsense,,P21_C4D1
+1503,GNAS,21,Missense,,P21_C4D1
+1504,NOTCH1,21,Missense,,P21_C4D1
+1505,TBX3,21,Frameshift Insertion,Pathogenic / Likely Pathogenic,P21_C4D1
+1506,RET,21,Missense,,P21_C4D1
+1507,MDM4,21,Missense,,P21_C4D1
+1508,MED12,21,Missense,,P21_C4D1
+1509,AXIN1,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1510,AURKA,21,Missense,,P21_C4D1
+1511,FOXL2,21,Missense,,P21_C4D1
+1512,GATA3,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1513,MED12,21,Missense,,P21_C4D1
+1514,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1515,TP53,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1516,NOTCH3,21,Missense,,P21_C4D1
+1517,IRF2,21,Missense,,P21_C4D1
+1518,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1520,JAK1,21,Missense,,P21_C4D1
+1521,FOXL2,21,Missense,,P21_C4D1
+1524,SDHB,21,Missense,,P21_C4D1
+1525,SETD2,21,Missense,,P21_C4D1
+1526,NKX2-1,21,Missense,,P21_C4D1
+1527,MED12,21,Missense,,P21_C4D1
+1528,KDM5C,21,Missense,,P21_C4D1
+1529,NBN,21,Missense,,P21_C4D1
+1530,PARP1,21,Nonsense,,P21_C4D1
+1531,SPEN,21,Missense,,P21_C4D1
+1532,MERTK,21,Missense,,P21_C4D1
+1533,ESR1,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1534,ATR,21,Missense,,P21_C4D1
+1535,TSC2,21,Missense,,P21_C4D1
+1536,CDH1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_C4D1
+1537,BCOR,21,Missense,,P21_C4D1
+1538,SDHA,21,Missense,,P21_C4D1
+1539,KDM5C,21,Missense,,P21_C4D1
+1540,SOX9,21,Missense,,P21_C4D1
+1541,STAT3,21,Missense,,P21_C4D1
+1542,ATR,21,Missense,,P21_C4D1
+1543,ALK,21,Missense,,P21_C4D1
+1546,HGF,21,Missense,,P21_C4D1
+1547,ARID1A,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C4D1
+1548,KDR,21,Missense,,P21_C4D1
+1549,ERCC4,21,Missense,,P21_C4D1
+1550,PALB2,21,Missense,,P21_C4D1
+1551,PTCH1,21,Missense,,P21_C4D1
+1552,FBXW7,21,Missense,,P21_C4D1
+1553,NT5C2,21,Missense,,P21_C4D1
+1554,TYRO3,21,Missense,,P21_C4D1
+1555,MDM4,21,Missense,,P21_C4D1
+1556,PAX5,21,Missense,,P21_C4D1
+1557,FANCA,21,Missense,,P21_C4D1
+1558,MSH3,21,Missense,,P21_C4D1
+1561,PIK3R1,21,Missense,,P21_C4D1
+1562,PALB2,21,Missense,,P21_C4D1
+1563,TP53,21,Missense,,P21_C4D1
+1564,ABL1,21,Missense,,P21_C4D1
+1565,CTNNB1,21,Missense,,P21_C4D1
+1566,PARP3,21,Missense,,P21_C4D1
+1567,MRE11A,21,Missense,,P21_C4D1
+1568,MED12,21,Missense,,P21_C4D1
+1570,SETD2,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C4D1
+1571,MYCL1,21,Missense,,P21_C4D1
+1572,TNFAIP3,21,Splice Site,Pathogenic / Likely Pathogenic,P21_C4D1
+1573,BRIP1,21,Missense,,P21_C4D1
+1575,KDM5A,21,Missense,,P21_C4D1
+1576,CDKN1B,21,Nonsense,Pathogenic / Likely Pathogenic,P21_C4D1
+1577,CIC,21,Missense,,P21_C4D1
+1578,CSF1R,21,Missense,,P21_C4D1
+1579,IRS2,21,Missense,,P21_C4D1
+1580,CUL4A,21,Missense,,P21_C4D1
+1581,NTRK1,21,Missense,,P21_C4D1
+1582,PARP1,21,Missense,,P21_C4D1
+1583,NF1,21,Missense,,P21_C4D1
+1584,IRF2,21,Missense,,P21_C4D1
+1585,BRD4,21,Splice Site,Pathogenic / Likely Pathogenic,P21_C4D1
+1586,ATRX,21,Missense,,P21_C4D1
+1587,WHSC1,21,Missense,,P21_C4D1
+1588,SDHB,21,Missense,,P21_C4D1
+1589,IRS2,21,Missense,,P21_C4D1
+1592,CDKN2C,21,Missense,Pathogenic / Likely Pathogenic,P21_C4D1
+1593,WHSC1,21,Missense,,P21_C4D1
+1594,NF2,21,Missense,,P21_C4D1
+1598,ESR1,22,Missense,Pathogenic / Likely Pathogenic,P22_C2D1
+1600,PIK3CA,22,Missense,Pathogenic / Likely Pathogenic,P22_C2D1
+1601,CDH1,22,Nonsense,Pathogenic / Likely Pathogenic,P22_C2D1
+1603,CREBBP,22,Missense,,P22_C2D1
+1604,FANCA,22,Missense,,P22_C2D1
+1605,KIT,22,Missense,,P22_C2D1
+1606,KDR,22,Missense,,P22_C2D1
+1607,CREBBP,22,Missense,,P22_C2D1
+1610,TYRO3,22,Missense,,P22_C2D1
+1611,MAP3K1,22,Frameshift Insertion,Pathogenic / Likely Pathogenic,P22_C2D1
+1612,PIK3CA,22,Missense,Pathogenic / Likely Pathogenic,P22_C3D1
+1613,CDH1,22,Nonsense,Pathogenic / Likely Pathogenic,P22_C3D1
+1615,PTPRO,22,Missense,,P22_C3D1
+1616,CREBBP,22,Missense,,P22_C3D1
+1617,ASXL1,22,Missense,,P22_C3D1
+1618,MAP3K1,22,Frameshift Insertion,Pathogenic / Likely Pathogenic,P22_C3D1
+1619,CREBBP,22,Missense,,P22_C3D1
+1620,NOTCH3,22,Missense,,P22_C3D1
+1621,KIT,22,Missense,,P22_C3D1
+1622,FANCA,22,Missense,,P22_C3D1
+1624,ESR1,22,Missense,Pathogenic / Likely Pathogenic,P22_C3D1
+1626,KDR,22,Missense,,P22_C3D1
+1629,TP53,23,Missense,Pathogenic / Likely Pathogenic,P23_Baseline
+1630,ALOX12B,23,Missense,,P23_Baseline
+1631,CUL3,23,Missense,,P23_Baseline
+1633,ATR,23,Missense,,P23_Baseline
+1634,RB1,23,Frameshift Deletion,Pathogenic / Likely Pathogenic,P23_Baseline
+1635,ERBB4,23,Missense,,P23_Baseline
+1636,NTRK3,23,Missense,,P23_Baseline
+1638,MET,23,Missense,,P23_Baseline
+1639,NTRK3,23,Missense,,P23_Baseline
+1640,BRCA1,23,Frameshift Insertion,Pathogenic / Likely Pathogenic,P23_Baseline
+1641,ATR,23,Missense,,P23_Baseline
+1644,TP53,25,Missense,Pathogenic / Likely Pathogenic,P25_Baseline
+1645,IKZF1,25,Missense,,P25_Baseline
+1646,SMAD4,25,Missense,,P25_Baseline
+1648,AR,25,Missense,,P25_Baseline
+1649,CREBBP,25,Missense,,P25_Baseline
+1650,TP53,25,Missense,Pathogenic / Likely Pathogenic,P25_Baseline
+1651,MRE11A,25,Missense,,P25_Baseline
+1652,ERBB2,25,Missense,Pathogenic / Likely Pathogenic,P25_Baseline
+1654,ERBB4,25,Missense,,P25_Baseline
+1655,MAP3K1,25,Frameshift Insertion,Pathogenic / Likely Pathogenic,P25_Baseline
+1657,MAP3K1,25,Frameshift Insertion,Pathogenic / Likely Pathogenic,P25_Baseline
+1659,TP53,25,Missense,Pathogenic / Likely Pathogenic,P25_Baseline
+1660,TP53,25,Frameshift Deletion,Pathogenic / Likely Pathogenic,P25_Baseline
+1661,CCND2,25,Missense,,P25_Baseline
+1662,ESR1,25,Missense,Pathogenic / Likely Pathogenic,P25_Baseline
+1666,PIK3C2G,26,Missense,,P26_C2D1
+1667,MAP3K13,26,Missense,,P26_C2D1
+1668,MTAP,26,Missense,,P26_C2D1
+1669,RNF43,26,Missense,,P26_C2D1
+1670,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1671,TP53,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1672,MYCN,26,Missense,,P26_C2D1
+1673,CUL4A,26,Missense,,P26_C2D1
+1674,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1675,CCND2,26,Missense,,P26_C2D1
+1676,ESR1,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1677,MYD88,26,Missense,,P26_C2D1
+1678,TNFRSF14,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1679,FGF19,26,Missense,,P26_C2D1
+1680,CALR,26,Missense,,P26_C2D1
+1681,MYC,26,Missense,,P26_C2D1
+1682,DDR2,26,Missense,,P26_C2D1
+1683,PPARG,26,Missense,,P26_C2D1
+1684,EMSY,26,Missense,,P26_C2D1
+1685,ROS1,26,Missense,,P26_C2D1
+1686,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_C2D1
+1687,PPP2R1A,26,Missense,,P26_C2D1
+1688,ASXL1,26,Missense,,P26_C2D1
+1689,EP300,26,Missense,,P26_C2D1
+1690,MSH3,26,Missense,,P26_C2D1
+1695,MCL1,27,Missense,,P27_Baseline
+1696,ESR1,27,Missense,Pathogenic / Likely Pathogenic,P27_Baseline
+1697,PTEN,27,Frameshift Insertion,Pathogenic / Likely Pathogenic,P27_Baseline
+1701,ZNF217,27,Missense,,P27_Baseline
+1702,ESR1,27,Missense,Pathogenic / Likely Pathogenic,P27_Baseline
+1703,ERBB3,27,Missense,Pathogenic / Likely Pathogenic,P27_Baseline
+1705,MSH3,27,Missense,,P27_Baseline
+1706,JAK3,27,Missense,,P27_Baseline
+1709,PIK3R1,27,Missense,,P27_Baseline
+1710,IRF4,27,Missense,,P27_Baseline
+1711,ROS1,27,Missense,,P27_Baseline
+1712,NFE2L2,27,Missense,Pathogenic / Likely Pathogenic,P27_Baseline
+1713,CBL,27,Frameshift Insertion,Pathogenic / Likely Pathogenic,P27_Baseline
+1715,NFE2L2,27,Missense,Pathogenic / Likely Pathogenic,P27_Baseline
+1716,NF1,27,Missense,,P27_Baseline
+1724,MSH3,27,Missense,,P27_C2D1
+1728,ESR1,27,Missense,Pathogenic / Likely Pathogenic,P27_C2D1
+1729,NFE2L2,27,Missense,Pathogenic / Likely Pathogenic,P27_C2D1
+1730,ESR1,27,Missense,Pathogenic / Likely Pathogenic,P27_C2D1
+1731,ESR1,27,Missense,Pathogenic / Likely Pathogenic,P27_C2D1
+1732,MCL1,27,Missense,,P27_C2D1
+1734,ABL1,27,Missense,,P27_C2D1
+1735,CBL,27,Frameshift Insertion,Pathogenic / Likely Pathogenic,P27_C2D1
+1736,PIK3R1,27,Missense,,P27_C2D1
+1738,JAK3,27,Missense,,P27_C2D1
+1739,ERBB3,27,Missense,Pathogenic / Likely Pathogenic,P27_C2D1
+1740,CREBBP,27,Missense,,P27_C2D1
+1741,RARA,27,Missense,,P27_C2D1
+1742,ZNF217,27,Missense,,P27_C2D1
+1744,PTEN,27,Frameshift Insertion,Pathogenic / Likely Pathogenic,P27_C2D1
+1752,GNAS,29,Missense,,P29_Baseline
+1753,RPTOR,29,Missense,,P29_Baseline
+1754,SF3B1,29,Missense,Pathogenic / Likely Pathogenic,P29_Baseline
+1756,EGFR,29,Missense,,P29_Baseline
+1757,ERRFI1,29,Missense,,P29_Baseline
+1758,AURKA,29,Missense,,P29_Baseline
+1760,ESR1,29,Missense,Pathogenic / Likely Pathogenic,P29_Baseline
+1761,PTEN,29,Missense,Pathogenic / Likely Pathogenic,P29_Baseline
+1764,FGFR3,29,Missense,,P29_Baseline
+1765,PIK3CA,29,Missense,Pathogenic / Likely Pathogenic,P29_Baseline
+1766,MYC,29,Missense,,P29_Baseline
+1768,APC,29,Missense,,P29_Baseline
+1769,MED12,29,Missense,,P29_Baseline
+1770,CHEK1,30,Missense,,P30_Baseline
+1775,CDH1,30,Missense,,P30_Baseline
+1776,MUTYH,30,Missense,Pathogenic / Likely Pathogenic,P30_Baseline
+1779,NF1,30,Nonsense,Pathogenic / Likely Pathogenic,P30_Baseline
+1783,MUTYH,30,Missense,Pathogenic / Likely Pathogenic,P30_C4D1
+1784,SMAD2,30,Missense,,P30_C4D1
+1785,CDH1,30,Frameshift Insertion,Pathogenic / Likely Pathogenic,P30_C4D1
+1790,NF1,30,Nonsense,Pathogenic / Likely Pathogenic,P30_C4D1
+1791,PIK3CA,30,Missense,Pathogenic / Likely Pathogenic,P30_C4D1
+1793,CHEK1,30,Missense,,P30_C4D1
+1796,CDH1,30,Frameshift Insertion,Pathogenic / Likely Pathogenic,P30_C6D1
+1802,PTCH1,30,Missense,,P30_C6D1
+1803,PIK3CA,30,Missense,Pathogenic / Likely Pathogenic,P30_C6D1
+1804,MUTYH,30,Missense,Pathogenic / Likely Pathogenic,P30_C6D1
+1806,CHEK1,30,Missense,,P30_C6D1
+1807,NF1,30,Nonsense,Pathogenic / Likely Pathogenic,P30_C6D1
+1809,ROS1,31,Nonsense,,P31_C2D1
+1811,CD70,31,Missense,,P31_C2D1
+1814,PTPRO,31,Missense,,P31_C2D1
+1815,CTNNB1,31,Missense,,P31_C2D1
+1816,BARD1,31,Missense,,P31_C2D1
+1819,TP53,31,Missense,Pathogenic / Likely Pathogenic,P31_C2D1
+1821,NOTCH1,31,Missense,,P31_C2D1
+1822,GATA3,31,Missense,Pathogenic / Likely Pathogenic,P31_C2D1
+1825,GATA3,31,Missense,Pathogenic / Likely Pathogenic,P31_EOT
+1826,BARD1,31,Missense,,P31_EOT
+1827,CTNNB1,31,Missense,,P31_EOT
+1829,TP53,31,Missense,Pathogenic / Likely Pathogenic,P31_EOT
+1830,CD70,31,Missense,,P31_EOT
+1835,PTPRO,31,Missense,,P31_EOT
+1836,ROS1,31,Nonsense,,P31_EOT
+1839,NOTCH1,31,Missense,,P31_EOT
+0,ERBB3,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+1,ERCC4,1,Missense,,P1_Tissue
+2,TP53,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+3,APC,1,Missense,,P1_Tissue
+5,AR,1,Missense,,P1_Tissue
+6,PIK3CA,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+7,ZNF703,1,Missense,,P1_Tissue
+8,BRCA2,1,Missense,,P1_Tissue
+10,ERBB3,1,Missense,,P1_Tissue
+11,TSC1,1,Missense,,P1_Tissue
+12,PTCH1,1,Missense,,P1_Tissue
+13,ATRX,1,Missense,,P1_Tissue
+14,EMSY,1,Nonsense,,P1_Tissue
+15,SPOP,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+17,IKZF1,1,Missense,,P1_Tissue
+18,SDHC,1,Missense,,P1_Tissue
+19,ARID1A,1,Missense,,P1_Tissue
+20,NOTCH3,1,Missense,,P1_Tissue
+21,FANCA,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Tissue
+22,ERCC4,1,Missense,,P1_Tissue
+23,MLL,1,Missense,,P1_Tissue
+24,AXIN1,1,Missense,,P1_Tissue
+25,FANCA,1,Missense,,P1_Tissue
+26,SMAD4,1,Missense,,P1_Tissue
+27,STAG2,1,Missense,,P1_Tissue
+29,ERBB3,1,Missense,,P1_Tissue
+30,MKNK1,1,Missense,,P1_Tissue
+31,FAS,1,Missense,,P1_Tissue
+32,GRM3,1,Missense,,P1_Tissue
+33,CCND1,1,Missense,,P1_Tissue
+34,BCORL1,1,Missense,,P1_Tissue
+35,IGF1R,1,Missense,,P1_Tissue
+36,RICTOR,1,Missense,,P1_Tissue
+37,CARD11,1,Missense,,P1_Tissue
+38,RAD21,1,Missense,,P1_Tissue
+39,GNAS,1,Missense,,P1_Tissue
+40,SF3B1,1,Missense,,P1_Tissue
+41,HNF1A,1,Missense,,P1_Tissue
+42,KDM5C,1,Missense,,P1_Tissue
+43,MLH1,1,Missense,,P1_Tissue
+44,PIK3CA,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+45,BTK,1,Missense,,P1_Tissue
+46,PPP2R1A,1,Nonsense,,P1_Tissue
+47,ASXL1,1,Missense,,P1_Tissue
+48,ATRX,1,Missense,,P1_Tissue
+49,MSH6,1,Missense,,P1_Tissue
+50,FANCC,1,Missense,,P1_Tissue
+51,PTPRO,1,Missense,,P1_Tissue
+52,APC,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Tissue
+53,ERBB4,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+54,APC,1,Missense,,P1_Tissue
+55,AR,1,Nonsense,,P1_Tissue
+56,MAP3K13,1,Missense,,P1_Tissue
+57,RB1,1,Missense,,P1_Tissue
+59,BRAF,1,Missense,Pathogenic / Likely Pathogenic,P1_Tissue
+60,SOX2,1,Missense,,P1_Tissue
+61,PRDM1,1,Missense,,P1_Tissue
+62,RAD52,1,Missense,,P1_Tissue
+63,ASXL1,1,Missense,,P1_Tissue
+64,ATRX,1,Missense,,P1_Tissue
+65,AXIN1,1,Missense,,P1_Tissue
+66,TET2,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Tissue
+67,FANCA,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Tissue
+68,IRF2,1,Missense,,P1_Tissue
+69,BCOR,1,Nonsense,Pathogenic / Likely Pathogenic,P1_Tissue
+70,POLE,1,Missense,,P1_Tissue
+71,VEGFA,1,Missense,,P1_Tissue
+72,PALB2,1,Missense,,P1_Tissue
+73,GNAS,10,Missense,,P10_Tissue
+76,GATA3,10,Frameshift Insertion,Pathogenic / Likely Pathogenic,P10_Tissue
+77,PTEN,10,Splice Site,Pathogenic / Likely Pathogenic,P10_Tissue
+78,SETD2,10,Missense,,P10_Tissue
+79,EGFR,10,Missense,,P10_Tissue
+82,GNAS,10,Missense,,P10_Tissue
+96,PRKAR1A,14,Missense,,P14_Tissue
+97,DAXX,14,Missense,,P14_Tissue
+99,PIK3CA,14,Missense,,P14_Tissue
+100,GNAS,14,Missense,,P14_Tissue
+101,PBRM1,14,Missense,,P14_Tissue
+102,IDH1,14,Missense,,P14_Tissue
+103,TP53,14,Missense,Pathogenic / Likely Pathogenic,P14_Tissue
+105,ROS1,14,Missense,,P14_Tissue
+108,SETD2,14,Missense,,P14_Tissue
+109,ERBB2,14,In Frame Insertion,Pathogenic / Likely Pathogenic,P14_Tissue
+110,PALB2,14,Missense,,P14_Tissue
+111,CDH1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Tissue
+113,MEN1,14,Splice Site,Pathogenic / Likely Pathogenic,P14_Tissue
+114,POLD1,14,Missense,,P14_Tissue
+115,PIK3CA,14,Missense,Pathogenic / Likely Pathogenic,P14_Tissue
+117,GATA3,14,Missense,,P14_Tissue
+119,FAM123B,14,Missense,,P14_Tissue
+122,PIK3CA,21,Missense,Pathogenic / Likely Pathogenic,P21_Tissue
+123,TSC2,21,Missense,Pathogenic / Likely Pathogenic,P21_Tissue
+125,ARID1A,21,Nonsense,Pathogenic / Likely Pathogenic,P21_Tissue
+126,SDHB,21,Missense,,P21_Tissue
+127,IRS2,21,Missense,,P21_Tissue
+128,SOX9,21,Missense,,P21_Tissue
+129,CDKN1B,21,Nonsense,Pathogenic / Likely Pathogenic,P21_Tissue
+130,MDM4,21,Missense,,P21_Tissue
+132,CDH1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_Tissue
+133,FBXW7,21,Missense,,P21_Tissue
+134,SOCS1,21,Frameshift Deletion,Pathogenic / Likely Pathogenic,P21_Tissue
+135,PARP1,21,Missense,,P21_Tissue
+137,PIK3R1,21,Missense,,P21_Tissue
+138,POLD1,21,Missense,,P21_Tissue
+139,ROS1,21,Missense,,P21_Tissue
+140,BRIP1,21,Missense,,P21_Tissue
+142,BCOR,21,Missense,,P21_Tissue
+143,GATA3,21,Missense,Pathogenic / Likely Pathogenic,P21_Tissue
+144,MSH3,21,Missense,,P21_Tissue
+145,JAK1,21,Nonsense,,P21_Tissue
+146,HGF,21,Missense,,P21_Tissue
+147,SDHA,21,Missense,,P21_Tissue
+148,TBX3,21,Frameshift Insertion,Pathogenic / Likely Pathogenic,P21_Tissue
+149,TP53,23,Missense,Pathogenic / Likely Pathogenic,P23_Tissue
+151,BRCA1,23,Frameshift Insertion,Pathogenic / Likely Pathogenic,P23_Tissue
+152,ATR,23,Missense,,P23_Tissue
+153,ATR,23,Missense,,P23_Tissue
+154,NTRK3,23,Missense,,P23_Tissue
+155,ERBB4,23,Missense,,P23_Tissue
+158,FBXW7,28,Missense,,P28_Tissue
+159,BCORL1,28,Missense,,P28_Tissue
+160,JAK1,28,Missense,,P28_Tissue
+161,TP53,28,Nonsense,Pathogenic / Likely Pathogenic,P28_Tissue
+162,TP53,28,Missense,Pathogenic / Likely Pathogenic,P28_Tissue
+164,IGF1R,28,Missense,,P28_Tissue
+168,MPL,28,Missense,,P28_Tissue
+182,RPTOR,29,Missense,,P29_Tissue
+183,SF3B1,29,Missense,Pathogenic / Likely Pathogenic,P29_Tissue
+184,EGFR,29,Missense,,P29_Tissue
+186,SPOP,29,Missense,,P29_Tissue
+187,VHL,29,Missense,,P29_Tissue
+188,ZNF217,29,Missense,,P29_Tissue
+189,PIK3CA,29,Missense,Pathogenic / Likely Pathogenic,P29_Tissue
+190,IGF1R,29,Missense,,P29_Tissue
+191,IRS2,29,Missense,,P29_Tissue
+195,GATA3,31,Missense,Pathogenic / Likely Pathogenic,P31_Tissue
+199,PTPRO,31,Missense,,P31_Tissue
+201,ROS1,31,Nonsense,,P31_Tissue
+202,NOTCH1,31,Missense,,P31_Tissue
+203,TP53,31,Missense,Pathogenic / Likely Pathogenic,P31_Tissue
+204,BARD1,31,Missense,,P31_Tissue
+206,PIK3C2G,31,Splice Site,,P31_Tissue
+207,CD70,31,Missense,,P31_Tissue
+225,TP53,3,Missense,Pathogenic / Likely Pathogenic,P3_Tissue
+226,HGF,3,Missense,,P3_Tissue
+228,DDR2,3,Missense,,P3_Tissue
+229,WT1,3,Splice Site,Pathogenic / Likely Pathogenic,P3_Tissue
+231,GATA6,3,Missense,,P3_Tissue
+233,CUL4A,3,Missense,,P3_Tissue
+236,NKX2-1,3,Missense,,P3_Tissue
+250,AXIN1,4,Missense,,P4_Tissue
+251,BRCA2,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Tissue
+252,SPEN,4,Splice Site,Pathogenic / Likely Pathogenic,P4_Tissue
+254,BCOR,4,Missense,,P4_Tissue
+255,ERBB2,4,Missense,,P4_Tissue
+256,MST1R,4,Missense,,P4_Tissue
+257,PALB2,4,Missense,,P4_Tissue
+258,BRCA2,4,Missense,,P4_Tissue
+259,MED12,4,Missense,,P4_Tissue
+260,ESR1,4,Missense,Pathogenic / Likely Pathogenic,P4_Tissue
+262,SPEN,4,Missense,,P4_Tissue
+275,BCORL1,5,Splice Site,Pathogenic / Likely Pathogenic,P5_Tissue
+276,EP300,5,Missense,,P5_Tissue
+277,SPEN,5,Missense,,P5_Tissue
+279,TP53,5,In Frame Deletion,Pathogenic / Likely Pathogenic,P5_Tissue
+281,FOXL2,5,Missense,,P5_Tissue
+282,FH,5,Missense,,P5_Tissue
+306,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_Tissue
+307,RB1,6,Missense,,P6_Tissue
+308,MST1R,6,Missense,,P6_Tissue
+309,POLE,6,Missense,,P6_Tissue
+310,PTEN,6,Missense,,P6_Tissue
+311,TP53,6,Missense,Pathogenic / Likely Pathogenic,P6_Tissue
+312,PIK3CA,6,Missense,Pathogenic / Likely Pathogenic,P6_Tissue
+314,BCORL1,6,Missense,,P6_Tissue
+315,BCORL1,6,Nonsense,Pathogenic / Likely Pathogenic,P6_Tissue
+316,CSF3R,6,Missense,,P6_Tissue
+317,SPOP,6,Splice Site,,P6_Tissue
+318,NOTCH2,6,Missense,,P6_Tissue
+319,BCL6,6,Missense,,P6_Tissue
+327,FGFR4,7,Missense,,P7_Tissue
+328,DIS3,7,Missense,,P7_Tissue
+329,TNFAIP3,7,Missense,,P7_Tissue
+330,REL,7,Missense,,P7_Tissue
+331,NF2,7,Missense,Pathogenic / Likely Pathogenic,P7_Tissue
+332,PIK3CA,7,Missense,Pathogenic / Likely Pathogenic,P7_Tissue
+333,PIK3C2G,7,Missense,,P7_Tissue
+334,ARID1A,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Tissue
+335,SMAD4,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Tissue
+336,MAP3K1,7,Missense,,P7_Tissue
+337,WHSC1L1,7,Missense,,P7_Tissue
+338,PDK1,7,Missense,,P7_Tissue
+339,ATR,7,Missense,,P7_Tissue
+340,CIC,7,Missense,,P7_Tissue
+341,FANCA,7,Missense,,P7_Tissue
+342,CDKN2C,7,Missense,Pathogenic / Likely Pathogenic,P7_Tissue
+343,MET,7,Missense,,P7_Tissue
+345,PTPRO,7,Missense,,P7_Tissue
+346,TP53,7,Missense,Pathogenic / Likely Pathogenic,P7_Tissue
+347,MLL,7,Missense,,P7_Tissue
+349,NF1,7,Nonsense,Pathogenic / Likely Pathogenic,P7_Tissue
+350,ERBB3,7,Missense,,P7_Tissue
+352,IRS2,7,Missense,,P7_Tissue
+353,ARID1A,7,Missense,,P7_Tissue
+354,ARID1A,7,Missense,,P7_Tissue
+355,MED12,7,Missense,,P7_Tissue
+356,JAK3,7,Missense,,P7_Tissue
+357,PPARG,7,Missense,,P7_Tissue
+359,RAD52,7,Missense,,P7_Tissue
+360,SPEN,7,Missense,,P7_Tissue
+362,SPEN,7,Missense,,P7_Tissue
+363,CIC,7,Missense,,P7_Tissue
+366,ESR1,8,Missense,Pathogenic / Likely Pathogenic,P8_Tissue
+367,TIPARP,8,Missense,,P8_Tissue
+368,FAM123B,8,Missense,,P8_Tissue
+369,PIK3CA,8,Missense,Pathogenic / Likely Pathogenic,P8_Tissue
+370,KDM5A,8,Nonsense,,P8_Tissue
+371,TP53,8,Splice Site,Pathogenic / Likely Pathogenic,P8_Tissue
+372,EP300,8,Missense,,P8_Tissue
+373,FGFR2,8,Missense,,P8_Tissue
+374,CCND3,8,Missense,,P8_Tissue
+375,BCL2L2,8,Missense,,P8_Tissue
+376,MRE11A,8,Missense,,P8_Tissue
+377,GNAS,8,Missense,,P8_Tissue
+400,TP53,11,Frameshift Insertion,Pathogenic / Likely Pathogenic,P11_Tissue
+401,EPHB4,11,Missense,,P11_Tissue
+402,PALB2,11,Frameshift Deletion,Pathogenic / Likely Pathogenic,P11_Tissue
+403,NOTCH1,11,Missense,,P11_Tissue
+404,SPEN,11,Missense,,P11_Tissue
+405,MDM4,11,Missense,,P11_Tissue
+407,KEL,11,Missense,,P11_Tissue
+408,FGF23,11,Missense,,P11_Tissue
+410,NF1,11,Missense,,P11_Tissue
+411,PIK3CB,11,Missense,,P11_Tissue
+412,FGF12,11,Missense,,P11_Tissue
+414,EPHB1,11,Missense,,P11_Tissue
+415,IKZF1,11,Missense,,P11_Tissue
+416,MAP2K2,11,Missense,,P11_Tissue
+417,IKBKE,11,Missense,,P11_Tissue
+441,CDH1,17,Frameshift Deletion,Pathogenic / Likely Pathogenic,P17_Tissue
+442,SPEN,17,Missense,,P17_Tissue
+443,MPL,17,Missense,,P17_Tissue
+444,PIK3CA,17,Missense,,P17_Tissue
+445,TBX3,17,Missense,,P17_Tissue
+447,TP53,17,Nonsense,Pathogenic / Likely Pathogenic,P17_Tissue
+448,PIK3CA,17,Missense,Pathogenic / Likely Pathogenic,P17_Tissue
+450,PIK3CA,17,Missense,,P17_Tissue
+451,ERBB4,17,Missense,,P17_Tissue
+462,CTNNB1,18,Missense,,P18_Tissue
+465,KDM6A,18,Missense,,P18_Tissue
+466,ESR1,18,Missense,Pathogenic / Likely Pathogenic,P18_Tissue
+469,SETD2,18,Missense,,P18_Tissue
+470,GATA3,18,Frameshift Insertion,Pathogenic / Likely Pathogenic,P18_Tissue
+482,TP53,19,Missense,Pathogenic / Likely Pathogenic,P19_Tissue
+483,MRE11A,19,Nonsense,Pathogenic / Likely Pathogenic,P19_Tissue
+484,PIK3CA,19,Missense,Pathogenic / Likely Pathogenic,P19_Tissue
+487,GNAS,19,Missense,,P19_Tissue
+488,ROS1,19,Missense,,P19_Tissue
+494,CDH1,22,Nonsense,Pathogenic / Likely Pathogenic,P22_Tissue
+495,FANCA,22,Missense,,P22_Tissue
+496,ESR1,22,Missense,Pathogenic / Likely Pathogenic,P22_Tissue
+497,CREBBP,22,Missense,,P22_Tissue
+499,MAP3K1,22,Frameshift Insertion,Pathogenic / Likely Pathogenic,P22_Tissue
+501,PIK3CA,22,Missense,Pathogenic / Likely Pathogenic,P22_Tissue
+502,PTPRO,22,Missense,,P22_Tissue
+508,MAP3K1,25,Frameshift Insertion,Pathogenic / Likely Pathogenic,P25_Tissue
+509,MRE11A,25,Missense,,P25_Tissue
+510,IKZF1,25,Missense,,P25_Tissue
+511,WT1,25,Missense,Pathogenic / Likely Pathogenic,P25_Tissue
+512,MAP3K1,25,Frameshift Insertion,Pathogenic / Likely Pathogenic,P25_Tissue
+513,ERBB4,25,Missense,,P25_Tissue
+515,ERBB2,25,Missense,Pathogenic / Likely Pathogenic,P25_Tissue
+516,SMAD4,25,Missense,,P25_Tissue
+530,EMSY,26,Missense,,P26_Tissue
+531,MTAP,26,Missense,,P26_Tissue
+532,ESR1,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue
+533,MYCN,26,Missense,,P26_Tissue
+534,ASXL1,26,Missense,,P26_Tissue
+535,PRKCI,26,Missense,,P26_Tissue
+536,ESR1,26,Missense,,P26_Tissue
+537,TNFRSF14,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue
+538,RNF43,26,Missense,,P26_Tissue
+539,ROS1,26,Missense,,P26_Tissue
+540,HGF,26,Missense,,P26_Tissue
+541,TP53,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue
+542,AURKA,26,Nonsense,Pathogenic / Likely Pathogenic,P26_Tissue
+543,MYC,26,Missense,,P26_Tissue
+544,IGF1R,26,Nonsense,,P26_Tissue
+545,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue
+546,PIK3C2G,26,Missense,,P26_Tissue
+547,MSH3,26,Missense,,P26_Tissue
+548,RAD21,26,Missense,,P26_Tissue
+549,CUL4A,26,Missense,,P26_Tissue
+550,EP300,26,Missense,,P26_Tissue
+551,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue
+552,DDR2,26,Missense,,P26_Tissue
+553,PIK3CA,26,Missense,Pathogenic / Likely Pathogenic,P26_Tissue

@@ -1,0 +1,761 @@
+---
+title: "NIMBUS KM curves"
+output: html_notebook
+---
+
+This code regenerates Figures 2B-H
+
+```{r pacakges}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+library(tidyverse)
+library(tibble)
+library(janitor)
+library(ggpubr)
+library(ggplot2)
+library(ggrepel)
+library(RColorBrewer)
+library(circlize)
+
+library(survival)
+library(survminer)
+library(lubridate)
+library(ggsurvfit)
+library(gtsummary)
+library(gt)
+library(tidycmprsk)
+
+```
+
+```{r load metadata}
+clin <- read.csv("data/clinical_km_curves.csv",row.names = 1)
+
+snv_all <- read.csv('data/mutations comut.csv')
+TMB_ctDNA_tissue<- read.csv("data/TMB_ctDNA_tissue.csv") %>% mutate(Timepoint=str_split_i(SUBJECT_ID_TIMEPOINT,"_",2))
+
+tissue_tmb <- TMB_ctDNA_tissue %>% filter(Timepoint=="Tissue")
+bTMB <- TMB_ctDNA_tissue %>% filter(Timepoint!="Tissue")
+tissue_IO <- read.csv("data/NIMBUS IO scores.csv",row.names = 1) 
+
+master_dict <- TMB_ctDNA_tissue %>% select(Subject.ID,SUBJECT_ID_TIMEPOINT,Timepoint)
+ctDNA_dict <- master_dict %>% filter(Timepoint!="Tissue")
+tissue_dict <- master_dict %>% filter(Timepoint=="Tissue")
+```
+
+```{r sample subsets of interest}
+ctDNA_baseline <- ctDNA_dict %>% filter(Timepoint == "Baseline") %>% pull(SUBJECT_ID_TIMEPOINT)
+tissue_baseline <- tissue_dict %>% pull(SUBJECT_ID_TIMEPOINT)
+tissue_but_not_baseline <- c(13,18,22,24,26,28,31)
+tissue_ctDNA_baseline <- c(
+  ctDNA_baseline,
+  tissue_dict %>% filter(`Subject.ID` %in% tissue_but_not_baseline) %>% pull(SUBJECT_ID_TIMEPOINT)
+)
+ctDNA_EOT <- ctDNA_dict %>%  filter(Timepoint == "EOT") %>% pull(SUBJECT_ID_TIMEPOINT)
+ctDNA_serial <- ctDNA_dict %>% filter(Timepoint %in% c("C1D15", "C2D1")) %>% pull(SUBJECT_ID_TIMEPOINT)
+
+cat("ctDNA baseline:", length(ctDNA_baseline), "\n")
+cat("Tissue:", length(tissue_baseline), "\n")
+cat("Tissue or ctDNA baseline:", length(tissue_ctDNA_baseline), "\n")
+cat("ctDNA EOT:", length(ctDNA_EOT), "\n")
+cat("ctDNA serial:", length(ctDNA_serial), "\n")
+```
+
+
+```{r gene status on clin}
+gene_of_interest <- c('ESR1','PTEN')
+
+snv_baseline = snv_all %>% filter(SUBJECT_ID_TIMEPOINT %in% tissue_ctDNA_baseline) %>% filter(gene %in% gene_of_interest)
+snv_long = snv_baseline %>% select(Subject_ID,gene,oncogenic)
+snv_long_binary = snv_long %>% select(Subject_ID,gene) %>% unique()
+snv_long_onco = snv_long %>% select(Subject_ID,gene,oncogenic) %>% filter(oncogenic!="") %>% unique()
+
+snv_long <- merge(snv_long_binary,snv_long_onco,by=c("gene","Subject_ID"),all = TRUE)
+snv_long <- snv_long %>% mutate(oncogenic=if_else(is.na(oncogenic),"Mutated","Oncogenic"))
+snv_wide <- pivot_wider(snv_long,names_from = gene, values_from = oncogenic,values_fill="")
+
+snv_long <- merge(snv_long_binary,snv_long_onco,by=c("gene","Subject_ID"),all = TRUE)
+snv_long <- snv_long %>% mutate(oncogenic="Mutated")
+snv_wide_mut <- pivot_wider(snv_long,names_from = gene, values_from = oncogenic,values_fill="")
+colnames(snv_wide_mut)=paste0(colnames(snv_wide_mut),"_mut")
+snv_wide_mut <- snv_wide_mut %>% dplyr::rename(Subject_ID=Subject_ID_mut)
+
+
+snv_long <- merge(snv_long_binary,snv_long_onco,by=c("gene","Subject_ID"),all = TRUE)
+snv_long <- snv_long %>% mutate(oncogenic=if_else(is.na(oncogenic),"","Oncogenic"))
+snv_wide_onco <- pivot_wider(snv_long,names_from = gene, values_from = oncogenic,values_fill="")
+colnames(snv_wide_onco)=paste0(colnames(snv_wide_onco),"_oncogenic")
+snv_wide_onco <- snv_wide_onco %>% dplyr::rename(Subject_ID=Subject_ID_oncogenic)
+
+
+clin_snv=clin %>% filter(casenum %in% (master_dict %>% filter(SUBJECT_ID_TIMEPOINT %in% tissue_ctDNA_baseline) %>% pull(`Subject.ID`)))
+clin_snv=merge(clin_snv,snv_wide_mut %>% rename(casenum=Subject_ID),by=c("casenum"),all.x = TRUE,all.y = F)
+clin_snv=merge(clin_snv,snv_wide_onco %>% rename(casenum=Subject_ID),by=c("casenum"),all = TRUE)
+clin_snv=merge(clin_snv,tissue_IO %>% rename(casenum=SUBJECT_ID),by=c("casenum"),all = TRUE)
+
+#We had DNA-seq from the 29 patients, so what is NA in the mutation information must be NA
+clin_snv<-clin_snv %>% mutate(ESR1_mut=if_else(is.na(ESR1_mut),"",ESR1_mut))
+clin_snv<-clin_snv %>% mutate(ESR1_oncogenic=if_else(is.na(ESR1_oncogenic),"",ESR1_oncogenic))
+clin_snv<-clin_snv %>% mutate(PTEN_mut=if_else(is.na(PTEN_mut),"",PTEN_mut))
+clin_snv<-clin_snv %>% mutate(PTEN_oncogenic=if_else(is.na(PTEN_oncogenic),"",PTEN_oncogenic))
+
+clin_snv
+```
+
+```{r Table 3}
+orr_plot=function(clin_curr,col_comp){
+  fe1<-clin_curr %>% filter(!is.na(.data[[col_comp]])) %>% select(ORR,all_of(col_comp)) %>% table() %>% fisher.test()
+  print(paste0(col_comp," ORR Fisher: p=",format(fe1$p.value,digits = 2),", OR=",format(round(fe1$estimate, 2), nsmall = 2)))
+  
+  clin_curr %>% filter(!is.na(.data[[col_comp]])) %>% tabyl(.data[[col_comp]],ORR) %>% adorn_totals(c("row", "col")) %>%
+  adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 1) %>%
+  adorn_ns("front") %>%
+  adorn_title()
+  
+}
+
+clin_curr<-clin
+clin_curr<-clin_curr %>% mutate(ORR=if_else(is.na(ORR),"No ORR",ORR)) %>% mutate(ORR=factor(ORR,levels=c("ORR","No ORR")))
+clin_curr<-clin_curr %>% mutate(TMB=factor(TMB,levels=c("<14",">=14")))
+clin_curr<-clin_curr %>% mutate(HR_status=factor(HR_status,levels=c("TNBC","HR +")))
+clin_curr<-clin_curr %>% mutate(PDL1=factor(PDL1,levels=c("negative","positive")))
+clin_curr<-clin_curr %>% mutate(TILs_geq10=factor(TILs_geq10,levels=c("<10",">=10")))
+
+col_comp="TMB"
+orr_plot(clin_curr,col_comp)
+
+col_comp="HR_status"
+orr_plot(clin_curr,col_comp)
+
+col_comp="PDL1"
+orr_plot(clin_curr,col_comp)
+
+col_comp="TILs_geq10"
+orr_plot(clin_curr,col_comp)
+
+
+```
+
+```{r KM plot functions}
+
+plt_surv=function(clin_curr,T_val,T_index,ylab,surv_type){
+  clin_curr["T_val"]=clin_curr[T_val]
+  clin_curr["T_index"]=clin_curr[T_index]
+  
+  fit=survfit(Surv(T_val,T_index) ~ 1,data = clin_curr)
+  med_stats=surv_median(fit) %>% mutate(surv_type=surv_type)
+  median_val=sprintf('%#.1f',med_stats$median)
+  estimate_up_var=sprintf('%#.1f',med_stats$upper)
+  estimate_dn_var=sprintf('%#.1f',med_stats$lower)
+  if(estimate_up_var!="NA"){
+    label_stat=sprintf("Median %s: %s months\n95%% CI: %s - %s months",surv_type,median_val,estimate_dn_var,estimate_up_var)
+  } else {label_stat=sprintf("Median %s: %s months\n95%% CI: %s months - not reached ",surv_type,median_val,estimate_dn_var)}
+  
+  p=ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette="#2E9FDF", #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.2, # table height change
+               risk.table.col="Black",
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               legend="none",
+               #surv.median.line = "hv",
+               conf.int.style = "step")
+  p$plot=p$plot + theme_pubr(base_size = 10) +
+    annotate(geom="text", x=20, y=0.8,
+             label=label_stat,size=3,hjust=0)  +
+    theme(legend.position = "none")
+  p$table = p$table +
+    theme_cleantable(base_size = 9) +
+    theme(plot.title = element_text(size=10)) +
+    theme(axis.text.y=element_blank()) 
+  return(list(p,med_stats))
+}
+
+plt_surv_groups=function(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title,pval_digts=2){
+  clin_curr["T_val"]=clin_curr[T_val]
+  clin_curr["T_index"]=clin_curr[T_index]
+  clin_curr["group"]=clin_curr[group_var]
+  
+  fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+  names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+  
+  hr <- coxph(Surv(T_val,T_index) ~ group,data = clin_curr)
+  ##This one also gives you the logrank: surv_pvalue(fit)
+  logrankp_val=summary(hr)$sctes["pvalue"] %>% as.numeric()
+  HR_val=summary(hr)$conf.int[,"exp(coef)"] %>% as.numeric()
+  CI_up=summary(hr)$conf.int[,"upper .95"] %>% as.numeric()
+  CI_dn=summary(hr)$conf.int[,"lower .95"] %>% as.numeric()
+  
+  logrankp_val= sprintf('%#.2g',logrankp_val)
+  HR_val=sprintf('%#.2g',HR_val)
+  CI_up=sprintf('%#.2g',CI_up)
+  CI_dn=sprintf('%#.2g',CI_dn)
+  label_stat=sprintf("HR (95%% CI): %s (%s - %s)\nLog-rank test p = %s",HR_val,CI_dn,CI_up,logrankp_val)
+
+  return(list("logrankp_val"= logrankp_val,"HR_val"=HR_val,"CI_up"=CI_up,"CI_dn"=CI_dn,"label_stat"=label_stat,"fit"=fit))
+}
+
+plt_surv_cox_tables=function(clin_curr_or,T_val,T_index,group_var,ylab,surv_type,legend_title){
+  clin_curr=clin_curr_or
+  clin_curr["T_val"]=clin_curr[T_val]
+  clin_curr["T_index"]=clin_curr[T_index]
+  clin_curr["group"]=clin_curr[group_var]
+  
+  formula_arg <- Surv(T_val,T_index) ~ group
+  data_arg <- clin_curr
+  cox_logrank <- rlang::expr(survfit(!!formula_arg, !!data_arg)) %>%
+  eval() %>%
+  tbl_survfit(times = c(12, 24),label_header = "**{time} months (95% CI)**") %>% add_p(test="logrank",pvalue_fun = ~ style_pvalue(.x, digits = 3))
+  
+  cox_coefficients <- coxph(Surv(T_val,T_index) ~ group,data = clin_curr) %>% 
+  tbl_regression(exp = TRUE) %>%
+  modify_column_hide(columns = p.value)
+  
+  fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+  names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+  med_stats=surv_median(fit) %>% rename(median_lower=lower,median_upper=upper)
+  
+  hr <- coxph(Surv(T_val,T_index) ~ group,data = clin_curr)
+  
+  hr_df=cox_coefficients %>% as_tibble() %>% rename(strata=`**Characteristic**`) %>% rename(`**HR 95% CI**`=`**95% CI**`)
+  survat_df=cox_logrank %>% as_tibble() %>% rename(strata=`**Characteristic**`) %>% select(-`**p-value**`)
+  logrank=summary(hr)$sctes %>% t %>% data.frame()
+  colnames(logrank)=paste0(colnames(logrank),"_logrank")
+  logrank["method"]="Log-rank test"
+  summary_stats=merge(hr_df,survat_df,by="strata",all=TRUE)
+  summary_stats=merge(summary_stats,logrank %>% mutate(strata="group"),by="strata",all=TRUE)
+  summary_stats=merge(summary_stats,med_stats,by="strata",all=TRUE)
+  summary_stats["surv_type"]=surv_type
+  
+  return(list(cox_coefficients,cox_logrank,summary_stats))
+
+}
+
+
+```
+
+```{r OS curve ESR1 oncogenic}
+
+clin_curr = clin_snv %>% filter(HR_status=="HR +")
+clin_curr=clin_curr %>% mutate(ESR1=if_else(ESR1_oncogenic=="Oncogenic","Yes","No"))
+
+ylab="Probability of Overall Survival"
+surv_type="OS"
+clin_curr=clin_curr
+T_val="OS_month"
+T_index="OS_index"
+group_var="ESR1"
+legend_title="ESR1 oncogenic mutation"
+label_posx=15
+label_posy=0.8
+plot_name="Figure 2B - OS ESR1"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+label_stat=plt_elements$label_stat
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10))
+p$table$theme$axis.text.y$size=9
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+```{r PFS curve PTEN oncogenic}
+
+clin_curr = clin_snv
+clin_curr=clin_curr %>% mutate(PTEN=if_else(PTEN_oncogenic=="Oncogenic","Yes","No"))
+
+ylab="Probability of Progression-Free Survival"
+surv_type="PFS"
+clin_curr=clin_curr
+T_val="PFS_month"
+T_index="PFS_index"
+group_var="PTEN"
+legend_title="PTEN oncogenic mutation"
+label_posx=15
+label_posy=0.8
+plot_name="Figure 2C - PFS PTEN"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+label_stat=plt_elements$label_stat
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10))
+ p$table$theme$axis.text.y$size=9
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+```{r OS curve PTEN oncogenic}
+
+clin_curr = clin_snv
+clin_curr=clin_curr %>% mutate(PTEN=if_else(PTEN_oncogenic=="Oncogenic","Yes","No"))
+
+ylab="Probability of Overall Survival"
+surv_type="OS"
+clin_curr=clin_curr
+T_val="OS_month"
+T_index="OS_index"
+group_var="PTEN"
+legend_title="PTEN oncogenic mutation"
+label_posx=15
+label_posy=0.8
+plot_name="Figure 2D - OS PTEN"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+label_stat=plt_elements$label_stat
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10))
+p$table$theme$axis.text.y$size=9
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+```{r PFS curve IO score Tissue}
+
+clin_curr = clin
+clin_curr=merge(clin,tissue_IO %>% rename(casenum=SUBJECT_ID),by=c("casenum"),all.x=FALSE,all.y=TRUE,suffixes=c("","_tissue"))
+clin_curr=clin_curr %>% mutate(IO=factor(io_status,levels=c("Low","High")))
+
+ylab="Probability of Progression-Free Survival"
+surv_type="PFS"
+clin_curr=clin_curr
+T_val="PFS_month"
+T_index="PFS_index"
+group_var="IO"
+legend_title="IO Score Tissue"
+label_posx=15
+label_posy=0.95
+plot_name="Figure 2E - PFS IO Score Tissue"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+label_stat=plt_elements$label_stat
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10))
+p$table$theme$axis.text.y$size=9
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+```{r OS curve IO score tissue}
+
+clin_curr = clin
+clin_curr=merge(clin,tissue_IO %>% rename(casenum=SUBJECT_ID),by=c("casenum"),all.x=FALSE,all.y=TRUE,suffixes=c("","_tissue"))
+clin_curr=clin_curr %>% mutate(IO=factor(io_status,levels=c("Low","High")))
+
+ylab="Probability of Overall Survival"
+surv_type="OS"
+clin_curr=clin_curr
+T_val="OS_month"
+T_index="OS_index"
+group_var="IO"
+legend_title="IO Score Tissue"
+label_posx=15
+label_posy=0.95
+plot_name="Figure 2F - OS IO Score Tissue"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+label_stat=plt_elements$label_stat
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10)) 
+p$table$theme$axis.text.y$size=9
+
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+
+```{r PFS curve TMB Tissue}
+
+clin_curr = clin
+clin_curr = merge(clin_curr,tissue_tmb %>% select(`Subject.ID`,TMB_muts) %>% rename(casenum=`Subject.ID`),by="casenum",all.x=FALSE,all.y=TRUE,suffixes=c("","_tissue"))
+clin_curr = clin_curr %>% mutate(TMB=if_else(TMB_muts_tissue>=14,">=14","<14"))
+clin_curr=clin_curr %>% mutate(TMB=if_else(TMB==">=14","\u226514 muts/Mb",TMB))
+clin_curr=clin_curr %>% mutate(TMB=if_else(TMB=="<14","<14 muts/Mb",TMB))
+clin_curr=clin_curr %>% mutate(TMB=factor(TMB,levels=c("<14 muts/Mb","\u226514 muts/Mb")))
+
+ylab="Probability of Progression-Free Survival"
+surv_type="PFS"
+clin_curr=clin_curr
+T_val="PFS_month"
+T_index="PFS_index"
+group_var="TMB"
+legend_title="TMB Tissue"
+label_posx=12
+label_posy=0.95
+plot_name="Figure 2G - PFS TMB Tissue"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+label_stat=plt_elements$label_stat
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10))
+p$table$theme$axis.text.y$size=9
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
+
+```{r OS curve TMB tissue}
+
+clin_curr = clin
+clin_curr = merge(clin_curr,tissue_tmb %>% select(`Subject.ID`,TMB_muts) %>% rename(casenum=`Subject.ID`),by="casenum",all.x=FALSE,all.y=TRUE,suffixes=c("","_tissue"))
+clin_curr = clin_curr %>% mutate(TMB=if_else(TMB_muts_tissue>=14,">=14","<14"))
+clin_curr=clin_curr %>% mutate(TMB=if_else(TMB==">=14","\u226514 muts/Mb",TMB))
+clin_curr=clin_curr %>% mutate(TMB=if_else(TMB=="<14","<14 muts/Mb",TMB))
+clin_curr=clin_curr %>% mutate(TMB=factor(TMB,levels=c("<14 muts/Mb","\u226514 muts/Mb")))
+
+ylab="Probability of Overall Survival"
+surv_type="OS"
+clin_curr=clin_curr
+T_val="OS_month"
+T_index="OS_index"
+group_var="TMB"
+legend_title="TMB Tissue"
+label_posx=14
+label_posy=0.65
+plot_name="Figure 2H - OS TMB Tissue"
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+
+plt_elements=plt_surv_groups(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+tbl_list=plt_surv_cox_tables(clin_curr,T_val,T_index,group_var,ylab,surv_type,legend_title)
+HR_estimate=tbl_list[[1]]
+Surv_at_dates=tbl_list[[2]]
+summary_stats=tbl_list[[3]]
+label_stat=plt_elements$label_stat
+
+clin_curr["T_val"]=clin_curr[T_val]
+clin_curr["T_index"]=clin_curr[T_index]
+clin_curr["group"]=clin_curr[group_var]
+  
+fit=survfit(Surv(T_val,T_index) ~ group,data = clin_curr)
+names(fit$strata)=str_replace_all(names(fit$strata),"group=","")
+
+p<-ggsurvplot(fit,
+               xlab="Time (months)",
+               ylab=ylab,
+               palette=c("#999999","#377eb8"), #line colours
+               risk.table=TRUE, #add risk table
+               risk.table.height=0.25, # table height change
+               risk.table.col="Black",
+               risk.table.y.text.col = TRUE,
+               tables.y.text=T,
+               tables.y.text.col=F,
+               risk.table.fontsize = 3.5,
+               legend.title=legend_title,
+               size=1.5,
+               censor=TRUE,
+               xlim=c(0,45),
+               break.x.by=6,
+               conf.int.style = "step")
+p$plot=p$plot + theme_pubr(base_size = 10) +
+  annotate(geom="text", x=label_posx, y=label_posy,
+           label=label_stat,size=3,hjust=0)
+p$table = p$table +
+  theme_cleantable(base_size = 9) +
+  theme(plot.title = element_text(size=10)) 
+p$table$theme$axis.text.y$size=9
+
+
+png(sprintf('./NIMBUS Figures/%s.png',plot_name), width = 4,height = 4,res = 450,units = "in")
+print(p)
+dev.off()
+pdf(sprintf('./NIMBUS Figures/%s.pdf',plot_name), width = 4,height = 4)
+print(p)
+dev.off()
+print(p)
+
+HR_estimate %>% as_gt() 
+Surv_at_dates %>% as_gt() 
+summary_stats 
+```
