@@ -26,6 +26,7 @@ library(gtsummary)
 library(gt)
 library(tidycmprsk)
 
+writeLines(capture.output(sessionInfo()), "./R sessionInfo.txt")
 ```
 
 ```{r load metadata}
