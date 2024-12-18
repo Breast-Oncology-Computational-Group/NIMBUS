@@ -27,5 +27,5 @@
 25,18,Y,24.0,1,HR +,,>1,PD,,
 26,19,Y,25.5,1,HR +,negative,0 or 1,PD,,
 27,22,Y,13.5,1,HR +,negative,0 or 1,SD,,
-28,25,Y,15.5,1,HR +,negative,>1,SD,,
+28,25,Y,15.5,1,HR +,negative,>1,PD,,
 29,26,N,2.0,1,HR +,negative,>1,PD,,
