@@ -1,5 +1,5 @@
 # NIMBUS
- Code for reproducing Comp Bio-related figures in the NIMBUS manuscript (Figures 2-3 and Supplemental Figure 4-8)
+ Code for reproducing Comp Bio-related figures in the NIMBUS manuscript (Figures 2-3 and Supplemental Figures 4-8)
 
 ## Contents
 The repository consists of:
